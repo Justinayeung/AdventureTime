@@ -15,15 +15,16 @@ public class CameraRotation : MonoBehaviour
 
     void Update()
     {
-        if(t < 1f)
+        if (t < 1f)
         {
             transform.Rotate(0, speed * t, 0);
 
         }
-        else
+        else if (transform.rotation.y == 18)
         {
-            transform.Rotate(0, 0 * t, 0);
+            transform.Rotate(0, 0, 0);
         }
+
 
     }
 
