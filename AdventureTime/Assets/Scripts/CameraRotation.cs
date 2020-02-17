@@ -4,29 +4,38 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    public float t;
+    [Header ("References")]
+    public Transform target;
+
+    [Header("Variables")]
+    public Vector3 offset;
     public float speed;
-    public GameObject CameraRotator;
+    public float endTime;
 
-    void Start()
-    {
-        t = Time.deltaTime;
+    private float time;
+    Vector3 cameraPos;
+
+    void Start() {
+        cameraPos = new Vector3(target.position.x + offset.x, target.position.y + offset.y, target.position.z + offset.z); //Adding offset to position of target (player)
     }
 
-    void Update()
-    {
-        if (t < 1f)
-        {
-            transform.Rotate(0, speed * t, 0);
-
-        }
-        else if (transform.rotation.y == 18)
-        {
-            transform.Rotate(0, 0, 0);
-        }
-
-
+    void Update() {
+        
     }
 
-    
+    void LateUpdate() {
+        CameraMovement();
+    }
+
+    /// <summary>
+    /// Rotates camera around player for a certain time
+    /// </summary>
+    public void CameraMovement() {
+        time += Time.deltaTime;
+        if (time < endTime) { //If time less than the endTime
+            cameraPos = Quaternion.AngleAxis(speed, Vector3.up) * cameraPos; //Rotate camera
+            transform.position = target.position + cameraPos; //Setting camera position
+            transform.LookAt(target.position); //Camera look at target (player)
+        }
+    }
 }
