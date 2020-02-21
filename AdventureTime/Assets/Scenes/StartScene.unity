@@ -212,7 +212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144614570}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d78fbecd40cb2ec4da942feb3489f8a1, type: 3}
   m_Name: 
@@ -687,6 +687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4af468fb6a6fa24794834373e2b1fe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 714939199}
+  dialogueText: {fileID: 593540016}
+  animator: {fileID: 1151446759}
 --- !u!4 &857148225
 Transform:
   m_ObjectHideFlags: 0
@@ -694,7 +697,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857148223}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -713,7 +716,6 @@ GameObject:
   - component: {fileID: 1001246237}
   - component: {fileID: 1001246236}
   - component: {fileID: 1001246235}
-  - component: {fileID: 1001246238}
   m_Layer: 5
   m_Name: continue button
   m_TagString: Untagged
@@ -728,17 +730,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001246233}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2098110763}
-  m_Father: {fileID: 1633685186}
-  m_RootOrder: 1
+  m_Father: {fileID: 1151446756}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114.300026, y: -179.9}
+  m_AnchoredPosition: {x: 112.30004, y: -26.899979}
   m_SizeDelta: {x: 47.7, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001246235
@@ -831,23 +833,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001246233}
   m_CullTransparentMesh: 0
---- !u!114 &1001246238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001246233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce196c7b12e02541b7f6bb8c32e1a75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: bitch
-    sentences:
-    - hi
-    - how r u
 --- !u!1 &1151446755
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +844,7 @@ GameObject:
   - component: {fileID: 1151446756}
   - component: {fileID: 1151446758}
   - component: {fileID: 1151446757}
+  - component: {fileID: 1151446759}
   m_Layer: 5
   m_Name: dialogue box
   m_TagString: Untagged
@@ -879,12 +865,13 @@ RectTransform:
   m_Children:
   - {fileID: 714939198}
   - {fileID: 593540015}
+  - {fileID: 1001246234}
   m_Father: {fileID: 1633685186}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -153}
+  m_AnchoredPosition: {x: 2, y: -279}
   m_SizeDelta: {x: 287.8, y: 88.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1151446757
@@ -923,6 +910,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1151446755}
   m_CullTransparentMesh: 0
+--- !u!95 &1151446759
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151446755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7af64afa8a8183741962855eb355dd32, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1377851565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1036,6 @@ GameObject:
   - component: {fileID: 1604674149}
   - component: {fileID: 1604674148}
   - component: {fileID: 1604674147}
-  - component: {fileID: 1604674152}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -1060,7 +1065,7 @@ SphereCollider:
   m_GameObject: {fileID: 1604674146}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 1.35
   m_Center: {x: 0, y: 0, z: 0}
@@ -1121,26 +1126,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.36, z: 0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2140695750}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1604674152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604674146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ce196c7b12e02541b7f6bb8c32e1a75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    name: bitch
-    sentences:
-    - hey there
 --- !u!1 &1633685182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1222,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1151446756}
-  - {fileID: 1001246234}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1318,3 +1307,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098110762}
   m_CullTransparentMesh: 0
+--- !u!1 &2140695749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140695750}
+  - component: {fileID: 2140695752}
+  - component: {fileID: 2140695751}
+  - component: {fileID: 2140695753}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2140695750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140695749}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1604674151}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140695751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140695749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ce196c7b12e02541b7f6bb8c32e1a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Bitch
+    sentences:
+    - hi
+    - how r u
+--- !u!135 &2140695752
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140695749}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.16
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2140695753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140695749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163c41bb7fac60a4585ab786535a686a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 2140695751}
+  Dialogue: {fileID: 1151446755}
