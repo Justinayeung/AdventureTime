@@ -19,10 +19,10 @@ public class Plaque : MonoBehaviour
 
     private void Update()
     {
-        //if (isRiddleThere)
-        //{
-        //    return;
-        //}
+        if (isRiddleThere)
+        {
+            return;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
