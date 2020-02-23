@@ -5888,6 +5888,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354551, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: Dialogue
+      value: 
+      objectReference: {fileID: 1051174291}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.name
+      value: GOD (proto version)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: hello there
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: hope everything kinda works.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: good luck.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 308ffb75177ed434a9372557f0cb3034, type: 3}
 --- !u!1 &336888473 stripped
@@ -11878,13 +11908,19 @@ Transform:
   m_Father: {fileID: 137255387}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: -17.761002, z: 0}
+--- !u!1 &1051174291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1809592530345689187, guid: 56d1636662faec745acbc5438292eebb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1570624836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1051174293 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1809592530345689213, guid: 56d1636662faec745acbc5438292eebb,
     type: 3}
   m_PrefabInstance: {fileID: 1570624836}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1051174291}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
