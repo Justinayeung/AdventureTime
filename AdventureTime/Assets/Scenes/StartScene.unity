@@ -421,6 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  agent: {fileID: 0}
   speed: 2
 --- !u!54 &384901293
 Rigidbody:
@@ -1856,10 +1858,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Bitch
+    name: NPC
     sentences:
     - hi
-    - how r u
+    - 'welcome to prototype 1. '
 --- !u!135 &2140695752
 SphereCollider:
   m_ObjectHideFlags: 0
