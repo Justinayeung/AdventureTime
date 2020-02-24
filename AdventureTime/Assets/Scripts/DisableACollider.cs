@@ -5,13 +5,13 @@ using UnityEngine;
 public class DisableACollider : MonoBehaviour
 {
 
-    public  bool SceneChanged = false;
+    public static bool sceneChanged;
     public GameObject beforeScene;
     public GameObject afterScene;
    
     void Update()
     {
-      if(SceneChanged == false)
+      if(StaticClass.sceneChanged == false)
         {
            beforeScene.SetActive(true);
             afterScene.SetActive(false);
