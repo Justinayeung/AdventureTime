@@ -33,8 +33,11 @@ public class PlayerMovement : MonoBehaviour
         Walking();
     }
 
+    /// <summary>
+    /// Walking Animation Function
+    /// </summary>
     public void Walking() {
-        if (Vector3.Distance(transform.position, lastPosition) > 0.02f)
+        if (Vector3.Distance(transform.position, lastPosition) > 0.02f) 
         {
             anim.SetBool("IsWalking", true);
         }
@@ -90,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 
             //Move our NavMeshAgent
             if (Physics.Raycast(ray, out hit))
-            { //Shoot out ray and checks if it hits something
+            { //Shoot out ray and checks if it hits something (using Nav Mesh)
                 agent.SetDestination(hit.point);
             }
         }
