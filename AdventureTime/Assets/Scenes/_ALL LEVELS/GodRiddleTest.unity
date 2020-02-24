@@ -25266,7 +25266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 778de0578361fd143942d475743ac5d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: ChestRiddle
+  sceneName: MainPathway
 --- !u!65 &1869526716
 BoxCollider:
   m_ObjectHideFlags: 0
