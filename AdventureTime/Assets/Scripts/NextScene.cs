@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class NextScene : MonoBehaviour
 {
-    [SerializeField] private string SceneName;
+    [SerializeField] private string toScene;
     private SceneController sceneController;
     public Image black;
     public Animator anim;
@@ -28,6 +28,6 @@ public class NextScene : MonoBehaviour
     IEnumerator Ending() {
         anim.SetBool("Fade", true);
         yield return new WaitUntil(() => black.color.a == 1);
-        SceneManager.LoadScene(SceneName);
+        sceneController.LoadScene(toScene);
     }
 }
