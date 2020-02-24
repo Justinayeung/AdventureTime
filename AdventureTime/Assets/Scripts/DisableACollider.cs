@@ -5,22 +5,23 @@ using UnityEngine;
 public class DisableACollider : MonoBehaviour
 {
 
-    public static bool SceneChanged;
+    public static bool SceneChanged = false;
     public GameObject beforeScene;
     public GameObject afterScene;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+   
     void Update()
     {
-       if(gameObject befo)
+      if(SceneChanged == false)
+        {
+           beforeScene.SetActive(true);
+            afterScene.SetActive(false);
+        }
+        else
+        {
+            beforeScene.SetActive(false);
+            afterScene.SetActive(true);
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
+   
 }
