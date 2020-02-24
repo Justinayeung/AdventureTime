@@ -6,9 +6,14 @@ using UnityEngine.UI;
 
 public class NextScene : MonoBehaviour
 {
-    public string SceneName;
+    [SerializeField] private string SceneName;
+    private SceneController sceneController;
     public Image black;
     public Animator anim;
+
+    void Start() {
+        sceneController = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
+    }
 
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
