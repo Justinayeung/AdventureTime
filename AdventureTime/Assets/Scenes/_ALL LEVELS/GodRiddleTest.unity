@@ -5901,7 +5901,7 @@ PrefabInstance:
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
@@ -5911,17 +5911,23 @@ PrefabInstance:
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: hello there
+      value: You must be here for the riddle.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: hope everything kinda works.
+      value: 'Guess what I am and you shall recieve a key ingredient. '
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
       value: good luck.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "\"I don\u2019t exist in space. You will never thank me but you can\u2019t
+        live without me. You can walk through me but never feel me.\""
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354555, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
