@@ -3115,7 +3115,7 @@ GameObject:
   - component: {fileID: 245551690}
   - component: {fileID: 245551691}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameController
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19403,7 +19403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: MainPathway
+  toScene: MainPathway
   black: {fileID: 1836698701}
   anim: {fileID: 1836698698}
 --- !u!4 &1749838941
