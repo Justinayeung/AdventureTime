@@ -12,12 +12,17 @@ public class PlayerMovement : MonoBehaviour
     [Header ("Variables")]
     public float speed;
 
+    [Header("Animation")]
+    public Animator anim;
+    Vector3 lastPosition;
+
     Rigidbody rb;
     Vector3 touchPos;
 
     // Start is called before the first frame update
     void Start() {
         rb = GetComponent<Rigidbody>();
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -25,6 +30,19 @@ public class PlayerMovement : MonoBehaviour
         PlayerMove();
         TouchController();
         MouseClickController();
+        Walking();
+    }
+
+    public void Walking() {
+        if (Vector3.Distance(transform.position, lastPosition) > 0.02f)
+        {
+            anim.SetBool("IsWalking", true);
+        }
+        else {
+            anim.SetBool("IsWalking", false);
+        }
+
+        lastPosition = transform.position;
     }
 
     /// <summary>
@@ -35,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal * speed, rb.velocity.y, moveVertical * speed);
         rb.velocity = movement;
+
     }
 
     /// <summary>
@@ -45,13 +64,15 @@ public class PlayerMovement : MonoBehaviour
             Touch touch = Input.GetTouch(i);
 
             //If screen if tapped
-            if (touch.phase == TouchPhase.Ended && touch.tapCount == 1) {
+            if (touch.phase == TouchPhase.Ended && touch.tapCount == 1)
+            {
                 touchPos = touch.position; //Setting touchPos to where screen was tapped
                 Ray ray = cam.ScreenPointToRay(touchPos); //Take touch position and convert it to a ray
                 RaycastHit hit; //Stores info of what the ray hits
 
                 //Move our NavMeshAgent
-                if (Physics.Raycast(ray, out hit)) { //Shoot out ray and checks if it hits something
+                if (Physics.Raycast(ray, out hit))
+                { //Shoot out ray and checks if it hits something
                     agent.SetDestination(hit.point);
                 }
             }
@@ -62,13 +83,16 @@ public class PlayerMovement : MonoBehaviour
     /// Mouse click to move player
     /// </summary>
     public void MouseClickController() {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition); //Take mouse position and convert it to a ray
-        RaycastHit hit; //Stores info of what the ray hits
+        if (Input.GetMouseButtonDown(0))  {
 
-        //Move our NavMeshAgent
-        if (Physics.Raycast(ray, out hit))
-        { //Shoot out ray and checks if it hits something
-            agent.SetDestination(hit.point);
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition); //Take mouse position and convert it to a ray
+            RaycastHit hit; //Stores info of what the ray hits
+
+            //Move our NavMeshAgent
+            if (Physics.Raycast(ray, out hit))
+            { //Shoot out ray and checks if it hits something
+                agent.SetDestination(hit.point);
+            }
         }
     }
 }
