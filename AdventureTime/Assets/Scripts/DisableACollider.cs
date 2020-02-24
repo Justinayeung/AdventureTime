@@ -5,7 +5,7 @@ using UnityEngine;
 public class DisableACollider : MonoBehaviour
 {
 
-    public static bool SceneChanged = false;
+    public  bool SceneChanged = false;
     public GameObject beforeScene;
     public GameObject afterScene;
    
