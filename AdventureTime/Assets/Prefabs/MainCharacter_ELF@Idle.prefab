@@ -739,11 +739,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9069230340730497618}
-  - component: {fileID: 1393410192585721640}
   - component: {fileID: 4082183480352624778}
   - component: {fileID: 4082183480352624791}
-  - component: {fileID: 4082183480352624789}
   - component: {fileID: 4082183480352624788}
+  - component: {fileID: 1393410192585721640}
+  - component: {fileID: 4082183480352624789}
   m_Layer: 0
   m_Name: MainCharacter_ELF@Idle
   m_TagString: Untagged
@@ -767,25 +767,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1393410192585721640
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5442381524080613441}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: fe17fb9b732eae34fb5a7eb44cdf5315, type: 3}
-  m_Controller: {fileID: 9100000, guid: 4e8dc16107bd1ca45be1edaf6b9d184b, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &4082183480352624778
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -796,7 +777,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 20
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -815,22 +796,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1.9780905, z: 0.7}
   m_Center: {x: 0, y: 1.0099676, z: 0}
---- !u!114 &4082183480352624789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5442381524080613441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  agent: {fileID: 4082183480352624788}
-  speed: 5
-  anim: {fileID: 1393410192585721640}
 --- !u!195 &4082183480352624788
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -853,6 +818,41 @@ NavMeshAgent:
   m_BaseOffset: -0.07
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1393410192585721640
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5442381524080613441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: fe17fb9b732eae34fb5a7eb44cdf5315, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4e8dc16107bd1ca45be1edaf6b9d184b, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4082183480352624789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5442381524080613441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  agent: {fileID: 4082183480352624788}
+  speed: 5
+  anim: {fileID: 1393410192585721640}
 --- !u!1 &5457958053122960420
 GameObject:
   m_ObjectHideFlags: 0
