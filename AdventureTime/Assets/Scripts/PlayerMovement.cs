@@ -95,9 +95,10 @@ public class PlayerMovement : MonoBehaviour
             RaycastHit hit; //Stores info of what the ray hits
 
             //Move our NavMeshAgent
-            if (Physics.Raycast(ray, out hit))
-            { //Shoot out ray and checks if it hits something (using Nav Mesh)
-                agent.SetDestination(hit.point);
+            if (Physics.Raycast(ray, out hit)) { //Shoots out ray and checks if it hits something a specific collider
+                if (hit.collider.tag == "Platform") {
+                    agent.SetDestination(hit.point);
+                }
             }
         }
     }
