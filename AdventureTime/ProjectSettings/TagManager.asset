@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Plaque
+  - Platform
   layers:
   - Default
   - TransparentFX

@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [Header ("References")]
-    public Camera cam;
-    public NavMeshAgent agent;
+    //[Header ("References")]
+    private Camera cam;
+    private NavMeshAgent agent;
 
     [Header ("Variables")]
     public float speed;
@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     void Start() {
         rb = GetComponent<Rigidbody>();
         anim = gameObject.GetComponent<Animator>();
+        cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -74,9 +76,10 @@ public class PlayerMovement : MonoBehaviour
                 RaycastHit hit; //Stores info of what the ray hits
 
                 //Move our NavMeshAgent
-                if (Physics.Raycast(ray, out hit))
-                { //Shoot out ray and checks if it hits something
-                    agent.SetDestination(hit.point);
+                if (Physics.Raycast(ray, out hit)) { //Shoots out ray and checks if it hits something a specific collider
+                    if (hit.collider.tag == "Platform") {
+                        agent.SetDestination(hit.point);
+                    }
                 }
             }
         }
@@ -92,9 +95,10 @@ public class PlayerMovement : MonoBehaviour
             RaycastHit hit; //Stores info of what the ray hits
 
             //Move our NavMeshAgent
-            if (Physics.Raycast(ray, out hit))
-            { //Shoot out ray and checks if it hits something (using Nav Mesh)
-                agent.SetDestination(hit.point);
+            if (Physics.Raycast(ray, out hit)) { //Shoots out ray and checks if it hits something a specific collider
+                if (hit.collider.tag == "Platform") {
+                    agent.SetDestination(hit.point);
+                }
             }
         }
     }
