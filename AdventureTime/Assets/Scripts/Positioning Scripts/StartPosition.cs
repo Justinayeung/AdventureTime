@@ -17,19 +17,11 @@ public class StartPosition : SceneController
         StartCoroutine(CharacterPosition());
     }
 
-    public void Update()
-    {
-
-    }
-
     IEnumerator CharacterPosition() {
         yield return new WaitForSeconds(0.3f);
-        if (prevScene == "MainMenu")
-        {
+        if (prevScene == "MainMenu") {
             player.position = mainMenuPos.position;
-        }
-        else if (prevScene == "MainPathway")
-        {
+        } else if (prevScene == "MainPathway") {
             player.position = maintoStartPos.position;
         }
     }
