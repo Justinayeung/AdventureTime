@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
+  toScene: ChestRiddle
   black: {fileID: 2098386749}
   anim: {fileID: 2098386746}
 --- !u!4 &33923920
@@ -7739,8 +7739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 277843424}
-  agent: {fileID: 539925319}
   speed: 5
   anim: {fileID: 0}
 --- !u!54 &539925314
@@ -10534,7 +10532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
+  toScene: LevelStart
   black: {fileID: 2098386749}
   anim: {fileID: 2098386746}
 --- !u!4 &1352201828
@@ -17146,7 +17144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
+  toScene: God
   black: {fileID: 2098386749}
   anim: {fileID: 2098386746}
 --- !u!4 &1832737400
@@ -17919,7 +17917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: 
+  toScene: GodRiddleTest
   black: {fileID: 2098386749}
   anim: {fileID: 2098386746}
 --- !u!4 &1923361093
