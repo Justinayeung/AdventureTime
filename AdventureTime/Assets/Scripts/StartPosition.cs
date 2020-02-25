@@ -14,11 +14,22 @@ public class StartPosition : SceneController
     //Checking which is the previous scene and setting location 
     public override void Start() {
         base.Start();
+        StartCoroutine(CharacterPosition());
+    }
 
-        if (prevScene == "MainMenu") {
+    public void Update()
+    {
+
+    }
+
+    IEnumerator CharacterPosition() {
+        yield return new WaitForSeconds(0.3f);
+        if (prevScene == "MainMenu")
+        {
             player.position = mainMenuPos.position;
         }
-        if (prevScene == "MainPathway") {
+        else if (prevScene == "MainPathway")
+        {
             player.position = maintoStartPos.position;
         }
     }
