@@ -10174,8 +10174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 126427527}
-  agent: {fileID: 920780642}
   speed: 5
   anim: {fileID: 0}
 --- !u!54 &920780644
@@ -14532,7 +14530,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24040
+  m_Name: pb_Mesh21520
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22549,9 +22547,17 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 0d000000
+  m_SelectedEdges:
+  - a: 52
+    b: 53
+  - a: 54
+    b: 52
+  - a: 53
+    b: 55
+  - a: 55
+    b: 54
+  m_SelectedVertices: 34000000350000003600000037000000
 --- !u!23 &2055677141
 MeshRenderer:
   m_ObjectHideFlags: 0
