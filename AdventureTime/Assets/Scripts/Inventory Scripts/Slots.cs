@@ -16,14 +16,14 @@ public class Slots : MonoBehaviour
         if (transform.childCount <=0) {
             inventory.isFull[i] = false;
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A)) // this is for a test purpose
         {
             DropItem();
         }
     }
 
     public void DropItem() {
-            Debug.Log("pressed??");
+           // Debug.Log("pressed??");
             foreach (Transform child in transform)
             {
                 child.GetComponent<Spawn>().SpawnDroppedItem();
