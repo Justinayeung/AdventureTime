@@ -12659,7 +12659,7 @@ MonoBehaviour:
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
-  m_SelectedVertices: 03000000
+  m_SelectedVertices: 
 --- !u!23 &986090140
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19101,7 +19101,7 @@ MonoBehaviour:
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedVertices: 24000000
 --- !u!23 &1676067809
 MeshRenderer:
   m_ObjectHideFlags: 0
