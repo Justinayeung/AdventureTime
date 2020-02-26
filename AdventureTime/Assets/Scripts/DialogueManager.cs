@@ -46,22 +46,24 @@ public class DialogueManager : MonoBehaviour
 
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence,typeAudio));
+        StartCoroutine(TypeSentence(sentence));
         Debug.Log(sentence);
     }
 
-    IEnumerator TypeSentence(string sentence, AudioSource typeAudio)
+    IEnumerator TypeSentence(string sentence)
     {
+        typeAudio.Play();
+
         dialogueText.text= "";
         foreach(char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            typeAudio.Play();
 
             yield return null;
 
 
         }
+        typeAudio.Stop();
 
     }
 
