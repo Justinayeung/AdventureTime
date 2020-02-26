@@ -55,10 +55,14 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text= "";
         foreach(char letter in sentence.ToCharArray())
         {
-            dialogueText.text += letter;
             typeAudio.Play();
+            dialogueText.text += letter;
+           
             yield return null;
+
         }
+        typeAudio.Stop();
+
     }
 
 

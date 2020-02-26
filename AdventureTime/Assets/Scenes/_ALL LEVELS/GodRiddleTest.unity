@@ -6053,7 +6053,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36830
+  m_Name: pb_Mesh14908
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9923,7 +9923,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36724
+  m_Name: pb_Mesh14792
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15101,7 +15101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1338554613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15651,7 +15651,7 @@ GameObject:
   - component: {fileID: 1355205881}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20229,7 +20229,7 @@ GameObject:
   - component: {fileID: 1525669881}
   m_Layer: 0
   m_Name: Lower Platform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22222,7 +22222,7 @@ GameObject:
   - component: {fileID: 1557020704}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22900,7 +22900,7 @@ PrefabInstance:
     - target: {fileID: 1809592531843128622, guid: 56d1636662faec745acbc5438292eebb,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56d1636662faec745acbc5438292eebb, type: 3}
@@ -26549,12 +26549,12 @@ PrefabInstance:
     - target: {fileID: 9069230340730497618, guid: 06414ba2c393c8c4d9210a300914cca0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.01
+      value: 2.77
       objectReference: {fileID: 0}
     - target: {fileID: 9069230340730497618, guid: 06414ba2c393c8c4d9210a300914cca0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.12
+      value: 5.08
       objectReference: {fileID: 0}
     - target: {fileID: 9069230340730497618, guid: 06414ba2c393c8c4d9210a300914cca0,
         type: 3}
@@ -26820,7 +26820,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh36788
+  m_Name: pb_Mesh14866
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
