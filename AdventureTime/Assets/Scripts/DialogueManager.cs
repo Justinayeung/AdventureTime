@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
 
     public AudioSource typeAudio;
+    public AudioClip typeClip;
 
     void Start()
     {
@@ -52,11 +53,12 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
-        typeAudio.Play();
+        
 
         dialogueText.text= "";
         foreach(char letter in sentence.ToCharArray())
         {
+            typeAudio.PlayOneShot(typeClip);
             dialogueText.text += letter;
 
             yield return null;

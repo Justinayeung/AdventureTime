@@ -4786,7 +4786,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 291afcf7efda930438487226affbc0eb, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -23058,6 +23058,11 @@ PrefabInstance:
       propertyPath: typeAudio
       value: 
       objectReference: {fileID: 231500285}
+    - target: {fileID: 4729745842293550283, guid: cb8f3152441841748a8e3c5cd27f7d0d,
+        type: 3}
+      propertyPath: typeClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 291afcf7efda930438487226affbc0eb, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb8f3152441841748a8e3c5cd27f7d0d, type: 3}
 --- !u!114 &1557199439 stripped
@@ -28351,7 +28356,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16032
+  m_Name: pb_Mesh14636
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
