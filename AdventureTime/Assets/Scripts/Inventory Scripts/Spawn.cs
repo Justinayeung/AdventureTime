@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn : MonoBehaviour
+public class Spawn : MonoBehaviour // dont need this 
 {
     public GameObject item;
     private Transform player;
