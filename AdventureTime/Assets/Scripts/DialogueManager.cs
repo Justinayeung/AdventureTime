@@ -53,11 +53,12 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
-        typeAudio.PlayOneShot(typeClip);
+        
 
         dialogueText.text= "";
         foreach(char letter in sentence.ToCharArray())
         {
+            typeAudio.PlayOneShot(typeClip);
             dialogueText.text += letter;
 
             yield return null;
