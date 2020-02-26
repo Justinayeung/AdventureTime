@@ -12,9 +12,12 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
+    public AudioSource typeAudio;
+
     void Start()
     {
         sentences = new Queue<string>();
+      
     }
 
    public void StartDialogue(Dialogue dialogue)
@@ -53,6 +56,7 @@ public class DialogueManager : MonoBehaviour
         foreach(char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            typeAudio.Play();
             yield return null;
         }
     }
