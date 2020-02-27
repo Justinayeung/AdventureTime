@@ -16562,7 +16562,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1357686342}
   - component: {fileID: 1357686344}
-  - component: {fileID: 1357686343}
   m_Layer: 0
   m_Name: Directional Light ROTATING
   m_TagString: Untagged
@@ -16584,19 +16583,6 @@ Transform:
   m_Father: {fileID: 1178531031}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
---- !u!114 &1357686343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357686341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 179c5cb03b1f6304daa7a0d6cb8cda20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
 --- !u!108 &1357686344
 Light:
   m_ObjectHideFlags: 0
@@ -27816,8 +27802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 181788302}
-  agent: {fileID: 2142177905}
   speed: 5
   anim: {fileID: 0}
 --- !u!54 &2142177907
