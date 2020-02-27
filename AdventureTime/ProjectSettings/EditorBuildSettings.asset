@@ -27,9 +27,12 @@ EditorBuildSettings:
     path: Assets/Scenes/_ALL LEVELS/God.unity
     guid: dd1397ff2fe86ea46bcd072318311da1
   - enabled: 1
-    path: Assets/Scenes/_ALL LEVELS/ChestRiddle.unity
-    guid: 9b11998319fa41b46a56ea7127b04ba4
-  - enabled: 1
     path: Assets/Scenes/_ALL LEVELS/GodRiddleTest.unity
     guid: 55644f68e6f37e44b94ae7e121a32750
+  - enabled: 1
+    path: Assets/Scenes/_ALL LEVELS/PathToChestRid.unity
+    guid: 02f0a7851ce708b4fad3c7744fe81551
+  - enabled: 1
+    path: Assets/Scenes/_ALL LEVELS/ChestRiddle.unity
+    guid: 9b11998319fa41b46a56ea7127b04ba4
   m_configObjects: {}

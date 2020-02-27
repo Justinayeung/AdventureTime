@@ -8,6 +8,7 @@ TagManager:
   - Plaque
   - Platform
   - Vines
+  - LoadingText
   layers:
   - Default
   - TransparentFX
