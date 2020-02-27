@@ -15,6 +15,9 @@ public class DialogueManager : MonoBehaviour
     public AudioSource typeAudio;
     public AudioClip typeClip;
 
+    public float textSpeed = .02f;
+    public AnimationCurve varCurve;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -56,11 +59,15 @@ public class DialogueManager : MonoBehaviour
         
 
         dialogueText.text= "";
+        float i = 0;
         foreach(char letter in sentence.ToCharArray())
         {
+            typeAudio.pitch = varCurve.Evaluate(i / sentence.Length);
+            //typeAudio.pitch = Random.Range(.85f, 1.15f);
             typeAudio.PlayOneShot(typeClip);
             dialogueText.text += letter;
-
+            i += 1f;
+            yield return new WaitForSeconds(textSpeed);
             yield return null;
 
 
