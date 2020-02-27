@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     public AudioSource typeAudio;
     public AudioClip typeClip;
 
+    public float textSpeed = .02f;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -60,7 +62,7 @@ public class DialogueManager : MonoBehaviour
         {
             typeAudio.PlayOneShot(typeClip);
             dialogueText.text += letter;
-
+            yield return new WaitForSeconds(textSpeed);
             yield return null;
 
 
