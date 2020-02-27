@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Animation")]
     public Animator anim;
     Vector3 lastPosition;
+    public Vector3 targetPosition;
 
     Rigidbody rb;
     Vector3 touchPos;
@@ -25,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         anim = gameObject.GetComponent<Animator>();
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         agent = GetComponent<NavMeshAgent>();
+        targetPosition = this.transform.position;
     }
 
     // Update is called once per frame
@@ -39,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     /// Walking Animation Function
     /// </summary>
     public void Walking() {
-        if (Vector3.Distance(transform.position, lastPosition) > 0.02f) 
+        if (Vector3.Distance(transform.position, targetPosition) > 0.1f) 
         {
             anim.SetBool("IsWalking", true);
         }
@@ -97,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
             //Move our NavMeshAgent
             if (Physics.Raycast(ray, out hit)) { //Shoots out ray and checks if it hits something a specific collider
                 if (hit.collider.tag == "Platform") {
+                    targetPosition = hit.point;
                     agent.SetDestination(hit.point);
                 }
             }
