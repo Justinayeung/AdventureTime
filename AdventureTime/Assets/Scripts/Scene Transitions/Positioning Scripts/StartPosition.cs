@@ -8,8 +8,10 @@ using UnityEngine;
 public class StartPosition : SceneController
 {
     public Transform player;
-    public Transform mainMenuPos; //Previous scene is the main menu
-    public Transform maintoStartPos; //Previous scene is the main pathway
+    [Tooltip("From MainMenu")]
+    public Transform mainMenuPos; //From MainMenu
+    [Tooltip("From MainPathway")]
+    public Transform maintoStartPos; //From MainPathway
 
     //Checking which is the previous scene and setting location 
     public override void Start() {
@@ -17,6 +19,10 @@ public class StartPosition : SceneController
         StartCoroutine(CharacterPosition());
     }
 
+    /// <summary>
+    /// Setting player position to specific transforms based on scene names
+    /// </summary>
+    /// <returns></returns>
     IEnumerator CharacterPosition() {
         yield return new WaitForSeconds(0.3f);
         if (prevScene == "MainMenu") {

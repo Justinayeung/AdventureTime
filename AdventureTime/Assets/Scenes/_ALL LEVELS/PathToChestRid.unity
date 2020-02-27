@@ -17135,7 +17135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589613605}
   m_Layer: 0
-  m_Name: FromMainPathPos
+  m_Name: FromMain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18954,7 +18954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 741621319}
   m_Layer: 0
-  m_Name: FromChestPos
+  m_Name: FromChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59420,7 +59420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1874986240}
   m_Layer: 0
-  m_Name: FromFlowerField
+  m_Name: FromFlower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
