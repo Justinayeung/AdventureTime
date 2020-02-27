@@ -9428,6 +9428,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 221782caac013344da98072a01361451, type: 3}
+--- !u!4 &963130201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3779163875077882861, guid: 221782caac013344da98072a01361451,
+    type: 3}
+  m_PrefabInstance: {fileID: 963130200}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &965014397
 Mesh:
   m_ObjectHideFlags: 0
@@ -9812,7 +9818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910bb091f1c129b4fb63c15ee4adc430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 963130201}
   startPos: {fileID: 2105068046}
   GodPos: {fileID: 57604909}
   ChestRiddlePos: {fileID: 1551932844}
