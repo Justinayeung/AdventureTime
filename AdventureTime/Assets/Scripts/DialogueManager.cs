@@ -62,8 +62,8 @@ public class DialogueManager : MonoBehaviour
         float i = 0;
         foreach(char letter in sentence.ToCharArray())
         {
-            typeAudio.pitch = varCurve.Evaluate(i / sentence.Length);
-            //typeAudio.pitch = Random.Range(.85f, 1.15f);
+            //typeAudio.pitch = varCurve.Evaluate(i / sentence.Length);
+            typeAudio.pitch = Random.Range(.85f, 1.15f);
             typeAudio.PlayOneShot(typeClip);
             dialogueText.text += letter;
             i += 1f;
