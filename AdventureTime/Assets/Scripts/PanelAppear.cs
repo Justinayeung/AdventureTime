@@ -7,8 +7,7 @@ public class PanelAppear : MonoBehaviour
     public GameObject panel;
     void Start()
     {
-     GameObject panel =GameObject.GetComponent<>();
-
+   
       StartCoroutine(ExitPanel());
     }
 
