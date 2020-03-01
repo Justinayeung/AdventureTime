@@ -7,17 +7,9 @@ public class Plaque : MonoBehaviour
 {
     public Animator riddleAnim;
 
-    public void OnTriggerStay(Collider other) {
+    public void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player")){
             riddleAnim.SetBool("isShowing", true);
-
-        }
-    }
-
-    public void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag("Player")){
-            riddleAnim.SetBool("isShowing", false);
-            StartCoroutine(StateIdle());
         }
     }
 }
