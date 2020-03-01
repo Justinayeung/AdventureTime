@@ -42757,6 +42757,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &1356929537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3779163875077882861, guid: 221782caac013344da98072a01361451,
+    type: 3}
+  m_PrefabInstance: {fileID: 1786818741}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1363248240
 GameObject:
   m_ObjectHideFlags: 0
@@ -43405,7 +43411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2e8008468f5434288df790b8cc5d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1356929537}
   mainPath: {fileID: 589613605}
   flower: {fileID: 1874986240}
   chest: {fileID: 741621319}
