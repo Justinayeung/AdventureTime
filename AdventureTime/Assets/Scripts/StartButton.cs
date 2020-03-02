@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class StartButton : MonoBehaviour
 {
     public string SceneName;
+    public AudioSource buttonAudio;
+
     public void LoadScene()
     {
+        buttonAudio.Play();
         SceneManager.LoadScene(SceneName);
     }
 }
