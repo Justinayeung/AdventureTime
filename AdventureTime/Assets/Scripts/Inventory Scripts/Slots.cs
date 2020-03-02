@@ -22,7 +22,7 @@ public class Slots : MonoBehaviour
         }
     }
 
-    public void DropItem() {
+    public void DropItem() {   // change this to spawn item
            // Debug.Log("pressed??");
             foreach (Transform child in transform)
             {
