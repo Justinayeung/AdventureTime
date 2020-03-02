@@ -148,8 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  navLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   speed: 5
   anim: {fileID: 8145038424724220154}
+  targetPosition: {x: 0, y: 0, z: 0}
 --- !u!195 &8145038424724220152
 NavMeshAgent:
   m_ObjectHideFlags: 0

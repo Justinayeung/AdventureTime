@@ -78,9 +78,12 @@ public class PlayerMovement : MonoBehaviour
                 RaycastHit hit; //Stores info of what the ray hits
 
                 //Move our NavMeshAgent
-                if (Physics.Raycast(ray, out hit)) { //Shoots out ray and checks if it hits something a specific collider
-                    if (hit.collider.tag == "Platform") {
-                        agent.SetDestination(hit.point);
+                if (Physics.Raycast(ray, out hit)) { //Shoots out ray
+                    agent.SetDestination(hit.point);
+
+                    //Checks if it hits a specific collider
+                    if (hit.collider.tag == "") {
+                        
                     }
                 }
             }
@@ -97,10 +100,13 @@ public class PlayerMovement : MonoBehaviour
             RaycastHit hit; //Stores info of what the ray hits
 
             //Move our NavMeshAgent
-            if (Physics.Raycast(ray, out hit)) { //Shoots out ray and checks if it hits something a specific collider
-                if (hit.collider.tag == "Platform") {
-                    targetPosition = hit.point;
-                    agent.SetDestination(hit.point);
+            if (Physics.Raycast(ray, out hit)) { //Shoots out ray
+                targetPosition = hit.point;
+                agent.SetDestination(hit.point);
+
+                //Checks if it hits a specific collider
+                if (hit.collider.tag == "") {
+                    
                 }
             }
         }
