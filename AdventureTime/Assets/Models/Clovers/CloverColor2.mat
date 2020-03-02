@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CloverColor
+  m_Name: CloverColor2
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.7599826, g: 0.9056604, b: 0.66215736, a: 1}
-    - _EmissionColor: {r: 0.46397147, g: 0.6886792, b: 0.33459416, a: 1}
+    - _Color: {r: 0.52156866, g: 0.7058824, b: 0.36078432, a: 1}
+    - _EmissionColor: {r: 0.27704892, g: 0.5660378, b: 0.11480955, a: 1}
