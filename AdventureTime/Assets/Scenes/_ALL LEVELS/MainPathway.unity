@@ -56446,7 +56446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toScene: ChestRiddle
+  toScene: PathOther
   black: {fileID: 1950823971}
   anim: {fileID: 1950823967}
 --- !u!1 &1701057145
