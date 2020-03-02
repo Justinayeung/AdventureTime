@@ -67,10 +67,10 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 40
+    value: 0
   tint:
     overrideState: 1
-    value: 20
+    value: 10
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -84,11 +84,11 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 1.2
   contrast:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 20
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
