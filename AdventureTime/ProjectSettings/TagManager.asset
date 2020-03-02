@@ -9,6 +9,7 @@ TagManager:
   - Platform
   - Vines
   - LoadingText
+  - Note
   layers:
   - Default
   - TransparentFX
