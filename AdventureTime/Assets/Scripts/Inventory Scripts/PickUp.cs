@@ -5,7 +5,8 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
-    public GameObject itemThatPickedUp;
+    [Header("Picked up UIs")]
+    public GameObject itemThatPickedUp; // place UI
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
