@@ -25628,6 +25628,7 @@ GameObject:
   - component: {fileID: 861167035}
   - component: {fileID: 861167038}
   - component: {fileID: 861167039}
+  - component: {fileID: 861167040}
   m_Layer: 9
   m_Name: noteObjectIcon
   m_TagString: Note
@@ -25705,13 +25706,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861167034}
-  m_LocalRotation: {x: 0.16582826, y: -0, z: -0, w: 0.98615474}
+  m_LocalRotation: {x: 0.16077927, y: -0.24148963, z: 0.040608022, w: 0.95612955}
   m_LocalPosition: {x: -2.75, y: 2.78, z: -10.19}
   m_LocalScale: {x: 0.116730206, y: 0.116730206, z: 0.116730206}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 19.091002, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 19.091002, y: -28.350002, z: 0}
 --- !u!114 &861167038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25740,6 +25741,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438ffcea24fe21247a524cda4ff3fbb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &861167040
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861167034}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a31ab67b738885a47bb325163d251e4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!43 &878546030
 Mesh:
   m_ObjectHideFlags: 0
