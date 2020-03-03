@@ -9,13 +9,7 @@ public class PickUp : MonoBehaviour
     public GameObject itemThatPickedUp; // place UI
     void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
-        /*
-        for (int i = 0; i < inventory.slots.Length; i++)
-        {
-            InventoryManager.isFull[i] = inventory.isFull[i];
-        }
-        */
+        inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -29,7 +23,6 @@ public class PickUp : MonoBehaviour
                     inventory.isFull[i] = true; // inventory is full
                     Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
                     Destroy(gameObject);
-                    //inventory.isFull[i] = InventoryManager.isFull[i];
                     break; // this break the for loop of checking empty slots
                 }
             }

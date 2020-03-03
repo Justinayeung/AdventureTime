@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 8145038424724220158}
   - component: {fileID: 8145038424724220153}
   - component: {fileID: 8145038424724220154}
-  - component: {fileID: 8145038424724220149}
   - component: {fileID: 8145038424724220155}
   - component: {fileID: 8145038424724220152}
   m_Layer: 0
@@ -117,25 +116,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8145038424724220149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155673655577637374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c61c2e498e5bfe54fa8820e70e71e1e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFull: 0000000000
-  slots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &8145038424724220155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,9 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b833921cd6e47244c930e165a28516c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navLayer:
-    serializedVersion: 2
-    m_Bits: 2048
   speed: 5
   anim: {fileID: 8145038424724220154}
   targetPosition: {x: 0, y: 0, z: 0}

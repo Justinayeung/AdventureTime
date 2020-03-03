@@ -10,7 +10,11 @@ TagManager:
   - Vines
   - LoadingText
   - Note
+<<<<<<< HEAD
   - Canvas
+=======
+  - InventoryManager
+>>>>>>> 6d12df076da23159dcd46eead2ab63623135e2c2
   layers:
   - Default
   - TransparentFX

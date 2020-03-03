@@ -8,7 +8,7 @@ public class Slots : MonoBehaviour
     public int i;
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
     }
 
     private void Update()
