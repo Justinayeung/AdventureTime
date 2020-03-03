@@ -35,5 +35,6 @@ public void ShowNoteImage()
         noteHideButton.SetActive(false);
 
         GetComponent<AudioSource>().PlayOneShot(notePutAway);
+        Destroy(this);
     }
 }

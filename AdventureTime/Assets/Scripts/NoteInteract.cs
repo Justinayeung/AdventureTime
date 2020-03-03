@@ -9,6 +9,8 @@ public class NoteInteract : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             GetComponent<Note>().ShowNoteImage();
+           
+
         }
     }
 }
