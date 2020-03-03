@@ -10,6 +10,7 @@ TagManager:
   - Vines
   - LoadingText
   - Note
+  - InventoryManager
   layers:
   - Default
   - TransparentFX
