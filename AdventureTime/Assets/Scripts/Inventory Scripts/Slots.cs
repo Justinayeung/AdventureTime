@@ -16,10 +16,12 @@ public class Slots : MonoBehaviour
         if (transform.childCount <=0) {
             inventory.isFull[i] = false;
         }
-        if (Input.GetKeyDown(KeyCode.A)) // this is for a test purpose
+        if (Input.GetKeyDown(KeyCode.A)) // this is for the test purpose
         {
             DropItem();
         }
+
+        //inventory.isFull[i] = InventoryManager.isFull[i];
     }
 
     public void DropItem() {   // change this to spawn item
