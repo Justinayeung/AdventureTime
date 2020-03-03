@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header ("Variables")]
     public float speed;
+    public bool canMove;
 
     [Header("Animation")]
     public Animator anim;
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Start is called before the first frame update
     void Start() {
+        canMove = true;
         rb = GetComponent<Rigidbody>();
         anim = gameObject.GetComponent<Animator>();
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
@@ -31,10 +33,14 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        PlayerMove();
-        TouchController();
-        MouseClickController();
-        Walking();
+        if (canMove) {
+            PlayerMove();
+            TouchController();
+            MouseClickController();
+            Walking();
+        } else {
+            anim.SetBool("IsWalking", false);
+        }
     }
 
     /// <summary>
