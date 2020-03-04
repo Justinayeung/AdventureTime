@@ -9,6 +9,8 @@ public class PickUp : MonoBehaviour
     public GameObject itemThatPickedUp; // place UI
 
     public bool haveAx;
+    public AudioSource axPickUpSound;
+    public AudioClip axPickedUpClip;
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
@@ -25,6 +27,8 @@ public class PickUp : MonoBehaviour
                 {
                     inventory.isFull[i] = true; // inventory is full
                     Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
+                    axPickUpSound.PlayOneShot(axPickedUpClip);
+
                     Destroy(gameObject);
                     haveAx = true;
                     break; // this break the for loop of checking empty slots
