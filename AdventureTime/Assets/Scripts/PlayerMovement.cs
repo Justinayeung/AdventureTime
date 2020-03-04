@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Animation")]
     public Animator anim;
-    Vector3 lastPosition;
     public Vector3 targetPosition;
 
     Rigidbody rb;
@@ -34,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if (canMove) {
-            PlayerMove();
+            //PlayerMove();
             TouchController();
             MouseClickController();
             Walking();
@@ -54,8 +53,6 @@ public class PlayerMovement : MonoBehaviour
         else {
             anim.SetBool("IsWalking", false);
         }
-
-        lastPosition = transform.position;
     }
 
     /// <summary>
@@ -66,9 +63,6 @@ public class PlayerMovement : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(moveHorizontal * speed, rb.velocity.y, moveVertical * speed);
         rb.velocity = movement;
-        Quaternion targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
-        transform.rotation = targetRotation;
-
     }
 
     /// <summary>
