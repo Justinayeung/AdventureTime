@@ -10,6 +10,9 @@ public class Note : MonoBehaviour
 
     public AudioClip noteAudio;
     public AudioClip notePutAway;
+    public AudioSource notePicked;
+    public AudioSource notePutDown;
+   
     void Start()
     {
         //disabling the note to appear
@@ -25,7 +28,7 @@ public void ShowNoteImage()
         noteImage.enabled = true;
         noteHideButton.SetActive(true);
 
-        GetComponent<AudioSource>().PlayOneShot(noteAudio);
+     notePicked.PlayOneShot(noteAudio);
     }
 
     public void HideNote()
@@ -34,7 +37,7 @@ public void ShowNoteImage()
         noteImage.enabled = false;
         noteHideButton.SetActive(false);
 
-        GetComponent<AudioSource>().PlayOneShot(notePutAway);
+       notePutDown.PlayOneShot(notePutAway);
         Destroy(this);
     }
 }
