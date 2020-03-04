@@ -28,12 +28,13 @@ public class PlayerMovement : MonoBehaviour
         cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         agent = GetComponent<NavMeshAgent>();
         targetPosition = this.transform.position;
+
     }
 
     // Update is called once per frame
     void Update() {
         if (canMove) {
-            //PlayerMove();
+            PlayerMove();
             TouchController();
             MouseClickController();
             Walking();

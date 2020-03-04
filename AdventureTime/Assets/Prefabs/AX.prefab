@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7512842772484999704}
   - component: {fileID: 7512842772484999705}
   - component: {fileID: 7512842772484999710}
+  - component: {fileID: 1824096139}
   m_Layer: 0
   m_Name: AX
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7512842772484999711}
-  m_LocalRotation: {x: 0.14974645, y: 0.3799036, z: -0.29177624, w: 0.864937}
+  m_LocalRotation: {x: 0.14975047, y: 0.37990636, z: -0.29177585, w: 0.8649352}
   m_LocalPosition: {x: 13.796851, y: 1.0144346, z: 1.528709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -62,6 +63,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1824096139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7512842772484999711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4815e903282b50a46b2da8e51a568978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemThatPickedUp: {fileID: 366630299495718762, guid: df1d77890a27ebc419314fe8a3c31efc,
+    type: 3}
 --- !u!1001 &7512842771853092920
 PrefabInstance:
   m_ObjectHideFlags: 0
