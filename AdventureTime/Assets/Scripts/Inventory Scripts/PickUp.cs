@@ -7,9 +7,12 @@ public class PickUp : MonoBehaviour
     private Inventory inventory;
     [Header("Picked up UIs")]
     public GameObject itemThatPickedUp; // place UI
+
+    public bool haveAx;
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
+        haveAx = false;
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -27,6 +30,15 @@ public class PickUp : MonoBehaviour
                 }
             }
         }
+        if (gameObject.CompareTag("Ax"))
+        {
+            haveAx = true;
+        }
+    }
+
+    public bool PickedUpTheAx(bool pickedUp) {
+        haveAx = pickedUp;
+        return pickedUp;
     }
 }
 

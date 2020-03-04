@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1824096139}
   m_Layer: 0
   m_Name: AX
-  m_TagString: Untagged
+  m_TagString: Ax
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemThatPickedUp: {fileID: 366630299495718762, guid: df1d77890a27ebc419314fe8a3c31efc,
     type: 3}
+  haveAx: 1
 --- !u!1001 &7512842771853092920
 PrefabInstance:
   m_ObjectHideFlags: 0
