@@ -6,14 +6,12 @@ public class PathToChestRidVineScript : MonoBehaviour
 {
 
     private Animator anim;
-    public bool haveAx;
-    private PickUp pickup;
+    public PickUp pickup;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        haveAx = false;
-        pickup = GameObject.FindGameObjectWithTag("Ax").GetComponent<PickUp>();
+        //pickup = GameObject.FindGameObjectWithTag("Ax").GetComponent<PickUp>();
     }
 
     void Update()
@@ -24,14 +22,14 @@ public class PathToChestRidVineScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) {
-            //if (pickup.PickedUpTheAx(true))
-           // {
+            if (pickup.PickedUpTheAx(true))
+            {
                 //play cutting animation
                 //cutting sound
                 //vine destroy
                 anim.SetTrigger("VineBreak");
                 //goes to next scene
-           // }
+            }
             
         }
     }

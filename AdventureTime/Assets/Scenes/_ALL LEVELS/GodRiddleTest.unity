@@ -22457,7 +22457,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f077ef294be3bd499ce3135708d1da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadScene: 0
 --- !u!114 &757373146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32494,7 +32493,7 @@ PrefabInstance:
     - target: {fileID: 5113889912165338314, guid: 685eefa0302ff5644858d4cab32955ef,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5113889912165338326, guid: 685eefa0302ff5644858d4cab32955ef,
         type: 3}

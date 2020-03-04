@@ -26,18 +26,22 @@ public class PickUp : MonoBehaviour
                     inventory.isFull[i] = true; // inventory is full
                     Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
                     Destroy(gameObject);
+                    haveAx = true;
                     break; // this break the for loop of checking empty slots
                 }
             }
         }
-        if (gameObject.CompareTag("Ax"))
-        {
-            haveAx = true;
-        }
+
     }
 
     public bool PickedUpTheAx(bool pickedUp) {
-        haveAx = pickedUp;
+        if (haveAx == true)
+        {
+            pickedUp = true;
+        }
+        else {
+            pickedUp = false;
+        }
         return pickedUp;
     }
 }
