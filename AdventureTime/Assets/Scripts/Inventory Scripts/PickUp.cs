@@ -8,8 +8,8 @@ public class PickUp : MonoBehaviour
     [Header("Picked up UIs")]
     public GameObject itemThatPickedUp; // place UI
 
-    public bool haveAx;
-    public AudioSource axPickUpSound;
+    private bool haveAx;
+    public AudioSource axPickUpSound;  // this should be changed to just pickup sound
     public AudioClip axPickedUpClip;
     void Start()
     {
@@ -26,29 +26,78 @@ public class PickUp : MonoBehaviour
                 if (inventory.isFull[i] == false) // this means inventory has more space to add items
                 {
                     inventory.isFull[i] = true; // inventory is full
-                    Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
-                    //axPickUpSound.PlayOneShot(axPickedUpClip);
+                    //Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
 
-                    Destroy(gameObject);
-                    if (gameObject.CompareTag("Ax"))
+                    if (gameObject.CompareTag("Ax") && inventory.isFull[i] == true)
                     {
                         axPickUpSound.PlayOneShot(axPickedUpClip);
                         haveAx = true;
                         StaticClass.haveAx = true;
                     }
+                    /*
+
+                    if (gameObject.CompareTag("Posion")) {
+                        //sound
+
+                        //bool
+                        StaticClass.havePosion = true;
+                    }
+                    */
+
+                    if (gameObject.CompareTag("Clover") && inventory.isFull[i] == true)
+                    {
+                        //sound
+                        
+                        //bool
+                        StaticClass.haveClover = true;
+                    }
+
+                    Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
+
+                    Destroy(gameObject);
                     break; // this break the for loop of checking empty slots
                 }
             }
         }
 
     }
-
+    /// <summary>
+    /// Function that checks the ax is picked up or not
+    /// </summary>
+    /// <param name="pickedUp"></param>
+    /// <returns></returns>
     public bool PickedUpTheAx(bool pickedUp) {
         if (haveAx == true && StaticClass.haveAx == true)
         {
             pickedUp = true;
         }
         else {
+            pickedUp = false;
+        }
+        return pickedUp;
+    }
+
+    public bool PickedUpThePosion(bool pickedUp)
+    {
+        if (StaticClass.havePosion == true)
+        {
+            pickedUp = true;
+        }
+        else
+        {
+            pickedUp = false;
+        }
+        return pickedUp;
+    }
+
+    public bool PickedUpTheClover(bool pickedUp)
+    {
+        if (StaticClass.haveClover == true)
+        {
+            pickedUp = true;
+        }
+        else
+        {
             pickedUp = false;
         }
         return pickedUp;
