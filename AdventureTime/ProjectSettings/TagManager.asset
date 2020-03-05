@@ -13,10 +13,15 @@ TagManager:
   - NPC
   - Vines
   - Ax
+<<<<<<< HEAD
   - Letter
   - LetterSlot
   - LetterSlot2
   - LetterSlot3
+=======
+  - Clover
+  - Posion
+>>>>>>> 94c8e778915feea1c96586b2a07a981c7e40ea43
   layers:
   - Default
   - TransparentFX
