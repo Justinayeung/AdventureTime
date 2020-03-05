@@ -7,6 +7,15 @@ using UnityEngine.UI;
 public class ChestInput : MonoBehaviour
 {
     public const string Letter_Tag = "Letter";
+    public Transform LetterSlot1;
+    public Transform LetterSlot2;
+    public Transform LetterSlot3;
+    public Transform A;
+    public Transform I;
+    public Transform R;
+    public bool LetterA, LetterI, LetterR;
+
+
     private bool dragging = false;
     private Vector3 letterInitialPos;
     private Transform letterToDrag;
@@ -15,6 +24,8 @@ public class ChestInput : MonoBehaviour
     List<RaycastResult> hitObjects = new List<RaycastResult>();
 
     void Update() {
+        checkPositions();
+
         //If mouse is held
         if (Input.GetMouseButtonDown(0)) {
             letterToDrag = GetLetterTransform(); //Get letter transform
@@ -72,5 +83,32 @@ public class ChestInput : MonoBehaviour
             return clickedObject.transform;
         }
         return null;
+    }
+
+    /// <summary>
+    /// Checking the distance of the letters to gameobject, setting bool to see if it is correct
+    /// </summary>
+    public void checkPositions() {
+        float distance1 = Vector3.Distance(LetterSlot1.position, A.position);
+        float distance2 = Vector3.Distance(LetterSlot2.position, I.position);
+        float distance3 = Vector3.Distance(LetterSlot3.position, R.position);
+
+        if (distance1 <= 10) { //Checking distance for letter A and slot 1
+            LetterA = true;
+        } else {
+            LetterA = false;
+        }
+
+        if (distance2 <= 10) { //Checking distance for letter I and slot 2
+            LetterI = true;
+        } else {
+            LetterI = false;
+        }
+
+        if (distance3 <= 10) { //Checking distance for letter R and slot 3
+            LetterR = true;
+        } else {
+            LetterR = false;
+        }
     }
 }
