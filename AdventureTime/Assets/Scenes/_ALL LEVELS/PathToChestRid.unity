@@ -14697,7 +14697,12 @@ PrefabInstance:
     - target: {fileID: 507136454415573629, guid: bc2b5b78b6a96354abb89bb842ebf3c0,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.a
-      value: 0.78431374
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507136454415573629, guid: bc2b5b78b6a96354abb89bb842ebf3c0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 15806
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2b5b78b6a96354abb89bb842ebf3c0, type: 3}
@@ -14760,8 +14765,8 @@ Transform:
   - {fileID: 1030784790}
   - {fileID: 1515015042}
   - {fileID: 643486747}
-  - {fileID: 351832322}
   - {fileID: 1370592233}
+  - {fileID: 351832322}
   - {fileID: 430791833}
   - {fileID: 2032180102}
   - {fileID: 36854369}
@@ -16861,7 +16866,12 @@ PrefabInstance:
     - target: {fileID: 507136454415573629, guid: bc2b5b78b6a96354abb89bb842ebf3c0,
         type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key0.a
-      value: 0.78431374
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507136454415573629, guid: bc2b5b78b6a96354abb89bb842ebf3c0,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 15806
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2b5b78b6a96354abb89bb842ebf3c0, type: 3}
@@ -33607,7 +33617,7 @@ Transform:
   m_LocalScale: {x: 3.2305582, y: 4.554867, z: 3.403727}
   m_Children: []
   m_Father: {fileID: 586142508}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1370592234
 CapsuleCollider:
