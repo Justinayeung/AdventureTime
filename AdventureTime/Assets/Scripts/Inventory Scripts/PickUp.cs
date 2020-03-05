@@ -27,10 +27,15 @@ public class PickUp : MonoBehaviour
                 {
                     inventory.isFull[i] = true; // inventory is full
                     Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
-                    axPickUpSound.PlayOneShot(axPickedUpClip);
+                    //axPickUpSound.PlayOneShot(axPickedUpClip);
 
                     Destroy(gameObject);
-                    haveAx = true;
+                    if (gameObject.CompareTag("Ax"))
+                    {
+                        axPickUpSound.PlayOneShot(axPickedUpClip);
+                        haveAx = true;
+                        StaticClass.haveAx = true;
+                    }
                     break; // this break the for loop of checking empty slots
                 }
             }
@@ -39,7 +44,7 @@ public class PickUp : MonoBehaviour
     }
 
     public bool PickedUpTheAx(bool pickedUp) {
-        if (haveAx == true)
+        if (haveAx == true && StaticClass.haveAx == true)
         {
             pickedUp = true;
         }
