@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     Vector3 touchPos;
 
+
     // Start is called before the first frame update
     void Start() {
         canMove = true;
@@ -50,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPosition) > 0.1f) 
         {
             anim.SetBool("IsWalking", true);
+
+
         }
         else {
             anim.SetBool("IsWalking", false);
