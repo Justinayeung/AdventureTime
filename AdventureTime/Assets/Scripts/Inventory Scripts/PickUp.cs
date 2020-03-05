@@ -22,6 +22,7 @@ public class PickUp : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             inventory.PickedUp(thisitempickuptype);
+           // PickUpSound.PlayOneShot(PickedUpClip);
             //add ax pick up sound
             Destroy(this.gameObject);
         }
