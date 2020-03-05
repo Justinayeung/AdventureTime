@@ -11,7 +11,7 @@ public class PathToChestRidVineScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        pickup = GameObject.FindGameObjectWithTag("Ax").GetComponent<PickUp>();
+        //pickup = GameObject.FindGameObjectWithTag("Ax").GetComponent<PickUp>();
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class PathToChestRidVineScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) {
-            if (pickup.PickedUpTheAx(true) && StaticClass.haveAx == true)
+            if (StaticClass.haveAx == true)
             {
                 //play cutting animation
                 //cutting sound

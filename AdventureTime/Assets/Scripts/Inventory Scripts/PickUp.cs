@@ -8,13 +8,11 @@ public class PickUp : MonoBehaviour
     [Header("Picked up UIs")]
     public GameObject itemThatPickedUp; // place UI
 
-    private bool haveAx;
     public AudioSource axPickUpSound;  // this should be changed to just pickup sound
     public AudioClip axPickedUpClip;
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
-        haveAx = false;
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -28,11 +26,11 @@ public class PickUp : MonoBehaviour
                     inventory.isFull[i] = true; // inventory is full
                     //Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
 
-                    if (gameObject.CompareTag("Ax") && inventory.isFull[i] == true)
+                    if (gameObject.CompareTag("Ax"))
                     {
                         axPickUpSound.PlayOneShot(axPickedUpClip);
-                        haveAx = true;
                         StaticClass.haveAx = true;
+                        Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
                     }
                     /*
 
@@ -44,15 +42,16 @@ public class PickUp : MonoBehaviour
                     }
                     */
 
-                    if (gameObject.CompareTag("Clover") && inventory.isFull[i] == true)
+                    if (gameObject.CompareTag("Clover"))
                     {
                         //sound
                         
                         //bool
                         StaticClass.haveClover = true;
+                        Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
                     }
 
-                    Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
+                    //Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
 
                     Destroy(gameObject);
                     break; // this break the for loop of checking empty slots
@@ -61,6 +60,7 @@ public class PickUp : MonoBehaviour
         }
 
     }
+    /*
     /// <summary>
     /// Function that checks the ax is picked up or not
     /// </summary>
@@ -102,5 +102,6 @@ public class PickUp : MonoBehaviour
         }
         return pickedUp;
     }
+    */
 }
 
