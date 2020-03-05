@@ -13,6 +13,10 @@ TagManager:
   - NPC
   - Vines
   - Ax
+  - Letter
+  - LetterSlot
+  - LetterSlot2
+  - LetterSlot3
   layers:
   - Default
   - TransparentFX
