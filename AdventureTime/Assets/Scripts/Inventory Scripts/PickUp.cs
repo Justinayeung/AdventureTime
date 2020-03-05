@@ -6,7 +6,7 @@ public class PickUp : MonoBehaviour
 {
     private Inventory inventory;
     [Header("Picked up UIs")]
-    public GameObject itemThatPickedUp; // place UI
+    public GameObject pickupUI; // place UI
 
     public AudioSource axPickUpSound;  // this should be changed to just pickup sound
     public AudioClip axPickedUpClip;
@@ -48,7 +48,7 @@ public class PickUp : MonoBehaviour
                         StaticClass.haveClover = true;
                     }
 
-                    Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
+                    Instantiate(pickupUI, inventory.slots[i].transform, false);
 
                     Destroy(gameObject);
                     break; // this break the for loop of checking empty slots
