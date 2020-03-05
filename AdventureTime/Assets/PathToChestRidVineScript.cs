@@ -11,12 +11,6 @@ public class PathToChestRidVineScript : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        //pickup = GameObject.FindGameObjectWithTag("Ax").GetComponent<PickUp>();
-    }
-
-    void Update()
-    {
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,10 +19,15 @@ public class PathToChestRidVineScript : MonoBehaviour
             if (StaticClass.haveAx == true)
             {
                 //play cutting animation
+
                 //cutting sound
+
                 //vine destroy
-                anim.SetTrigger("VineBreak");
+                anim.SetTrigger("VineBreak"); // vine break animation
+
                 //goes to next scene
+
+                StaticClass.axUsed = true; // this bool checks if ax is used so that we could destroy the ax UI
             }
             
         }

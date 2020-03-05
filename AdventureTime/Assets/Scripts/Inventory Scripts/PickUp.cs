@@ -24,17 +24,15 @@ public class PickUp : MonoBehaviour
                 if (inventory.isFull[i] == false) // this means inventory has more space to add items
                 {
                     inventory.isFull[i] = true; // inventory is full
-                    //Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
 
-                    if (gameObject.CompareTag("Ax"))
+                    if (gameObject.CompareTag("Ax") && StaticClass.haveAx == false) // if the player picked up the ax
                     {
-                        axPickUpSound.PlayOneShot(axPickedUpClip);
-                        StaticClass.haveAx = true;
-                        Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
+                        axPickUpSound.PlayOneShot(axPickedUpClip);   // play ax picking up sound 
+                        StaticClass.haveAx = true;                   // and check the player picked up
                     }
-                    /*
 
-                    if (gameObject.CompareTag("Posion")) {
+                    /*
+                    if (gameObject.CompareTag("Posion")  && StaticClass.havePosion == false) {
                         //sound
 
                         //bool
@@ -42,16 +40,15 @@ public class PickUp : MonoBehaviour
                     }
                     */
 
-                    if (gameObject.CompareTag("Clover"))
+                    if (gameObject.CompareTag("Clover") && StaticClass.haveClover == false)
                     {
                         //sound
                         
                         //bool
                         StaticClass.haveClover = true;
-                        Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
                     }
 
-                    //Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
+                    Instantiate(itemThatPickedUp, inventory.slots[i].transform, false);
 
                     Destroy(gameObject);
                     break; // this break the for loop of checking empty slots
@@ -60,48 +57,5 @@ public class PickUp : MonoBehaviour
         }
 
     }
-    /*
-    /// <summary>
-    /// Function that checks the ax is picked up or not
-    /// </summary>
-    /// <param name="pickedUp"></param>
-    /// <returns></returns>
-    public bool PickedUpTheAx(bool pickedUp) {
-        if (haveAx == true && StaticClass.haveAx == true)
-        {
-            pickedUp = true;
-        }
-        else {
-            pickedUp = false;
-        }
-        return pickedUp;
-    }
-
-    public bool PickedUpThePosion(bool pickedUp)
-    {
-        if (StaticClass.havePosion == true)
-        {
-            pickedUp = true;
-        }
-        else
-        {
-            pickedUp = false;
-        }
-        return pickedUp;
-    }
-
-    public bool PickedUpTheClover(bool pickedUp)
-    {
-        if (StaticClass.haveClover == true)
-        {
-            pickedUp = true;
-        }
-        else
-        {
-            pickedUp = false;
-        }
-        return pickedUp;
-    }
-    */
 }
 

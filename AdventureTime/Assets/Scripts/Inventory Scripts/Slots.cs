@@ -13,17 +13,12 @@ public class Slots : MonoBehaviour
 
     private void Update()
     {
-        if (transform.childCount <=0) {
-            inventory.isFull[i] = false;
+        if (transform.childCount <=0) { // this checks that if a slot is empty boolean checks false so that
+            inventory.isFull[i] = false; // the player can collect staff
         }
-        if (Input.GetKeyDown(KeyCode.A)) // this is for the test purpose
-        {
-            DropItem();
-        }
-
-        //inventory.isFull[i] = InventoryManager.isFull[i];
     }
 
+    /*
     public void DropItem() {   // change this to spawn item
            // Debug.Log("pressed??");
             foreach (Transform child in transform)
@@ -32,4 +27,5 @@ public class Slots : MonoBehaviour
                 GameObject.Destroy(child.gameObject);
             }
     }
+    */
 }

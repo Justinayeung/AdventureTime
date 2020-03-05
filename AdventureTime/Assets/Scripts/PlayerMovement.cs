@@ -114,14 +114,4 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-    /*
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Vines"))
-        {
-            // play break animation
-            anim.SetTrigger("VineBreak");
-        }
-    }
-    */
 }
