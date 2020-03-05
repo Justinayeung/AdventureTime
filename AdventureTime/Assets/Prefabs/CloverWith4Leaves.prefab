@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3830596213762068503}
   - component: {fileID: 7348669529274623114}
   - component: {fileID: 301752523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CloverWith4Leaves
   m_TagString: Clover
   m_Icon: {fileID: 0}
@@ -106,7 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4815e903282b50a46b2da8e51a568978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemThatPickedUp: {fileID: 8244664365689118074, guid: 97255a39943e96043a874b95c476244e,
-    type: 3}
-  axPickUpSound: {fileID: 0}
-  axPickedUpClip: {fileID: 0}
+  thisitempickuptype: 1
+  PickUpSound: {fileID: 0}
+  PickedUpClip: {fileID: 0}

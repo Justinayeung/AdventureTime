@@ -10098,11 +10098,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloverWith4Leaves
       objectReference: {fileID: 0}
-    - target: {fileID: 3248736879422252235, guid: e59ae9f7e6d918448bca80aea1741f5c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e59ae9f7e6d918448bca80aea1741f5c, type: 3}
 --- !u!1001 &302815007

@@ -12,4 +12,5 @@ public class StaticClass
     public static bool axUsed;
     public static bool cloverUsed;
     public static bool posionUsed;
+
 }

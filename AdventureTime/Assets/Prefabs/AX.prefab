@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7512842772484999705}
   - component: {fileID: 7512842772484999710}
   - component: {fileID: 1824096139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AX
   m_TagString: Ax
   m_Icon: {fileID: 0}
@@ -75,9 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4815e903282b50a46b2da8e51a568978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemThatPickedUp: {fileID: 366630299495718762, guid: df1d77890a27ebc419314fe8a3c31efc,
-    type: 3}
-  haveAx: 1
+  thisitempickuptype: 0
+  axPickUpSound: {fileID: 0}
+  axPickedUpClip: {fileID: 8300000, guid: 50760e8ba0c821c4a87a00ff2b9e1504, type: 3}
 --- !u!1001 &7512842771853092920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159,6 +159,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ax
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1cb879ee0ae400d498bbfeb3518dd075,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1cb879ee0ae400d498bbfeb3518dd075, type: 3}
