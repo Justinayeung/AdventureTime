@@ -12,6 +12,8 @@ public class MainPathPosition : SceneController
     public Transform startPos; //From LevelStart
     [Tooltip("From God")]
     public Transform GodPos; //From God
+    public Transform GodPos1; //From God
+    public Transform GodPos2; //From God
     [Tooltip("From ChestPath")]
     public Transform ChestRiddlePos; //From PathToChestRid
     [Tooltip("From PathOther")]
@@ -34,9 +36,9 @@ public class MainPathPosition : SceneController
         } else if (prevScene == "God") {
             player.position = GodPos.position;
         } else if (prevScene == "GodRiddleTest") {
-            player.position = GodPos.position;
+            player.position = GodPos1.position;
         } else if (prevScene == "GodAfterRid") {
-            player.position = GodPos.position;
+            player.position = GodPos2.position;
         } else if (prevScene == "ChestRiddle") {
             player.position = ChestRiddlePos.position;
         } else if (prevScene == "PathOther") {
