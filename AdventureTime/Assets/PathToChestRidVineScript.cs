@@ -18,16 +18,16 @@ public class PathToChestRidVineScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player")) {
             if (StaticClass.haveAx == true)
             {
-                //play cutting animation
+                //play cutting animation of the player
 
-                //cutting sound
+                //vine cutting sound
 
-                //vine destroy
+                //vine destroy animation
                 anim.SetTrigger("VineBreak"); // vine break animation
 
                 //goes to next scene
 
-                StaticClass.axUsed = true; // this bool checks if ax is used so that we could destroy the ax UI
+                StaticClass.axUsed = true; // this bool checks if ax is used so that we could destroy the ax UI in "Spawn" Script.
             }
             
         }

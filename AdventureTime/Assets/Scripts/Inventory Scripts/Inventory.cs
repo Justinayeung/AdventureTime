@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public enum pickupTypes { Ax, Clover, Posion };
+    public enum pickupTypes { Ax, Clover, Posion, Amaranthus };
 
     public bool[] isFull;
     public GameObject[] slots;
@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour
     public GameObject cloverUI;
     public GameObject axUI;
     //public GameObject posionUI;
+    public GameObject amaranthusUI;
 
     void Awake()
     {
@@ -28,30 +29,31 @@ public class Inventory : MonoBehaviour
             Destroy(this.gameObject); // this destorys the new inventory that does not store information
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject); // next scene this inventory script won't be destoryed and keep the info
+
         cloverUI.SetActive(false);
         axUI.SetActive(false);
+        //posionUI.SetActive(false);
+        amaranthusUI.SetActive(false);
     }
-
-    public void Update()
-    {
-        //PickedUp(itemPickedUp);
-    }
+    /// <summary>
+    /// This function checks the object is picked up and spawns the icon on inventory and also checks that inventory is occupied
+    /// </summary>
+    /// <param name="pickedupitem"></param>
     public void PickedUp(pickupTypes pickedupitem) {
-        //itemPickedUp = _pickedUp;
 
             for (int i = 0; i < slots.Length; i++)
             {
-                if (isFull[i] == false) // this means inventory has more space to add items
+                if (isFull[i] == false) // this means inventory has more space to add items  //not full!!//
                 {
-                    isFull[i] = true; // inventory is full
+                    isFull[i] = true; // this slot is full
 
                 switch(pickedupitem){
                     case pickupTypes.Ax:
                         StaticClass.haveAx = true;
                         axUI.transform.position = slots[i].transform.position;
-                        axUI.transform.parent = slots[i].transform;
-                        axUI.SetActive(true);
+                        axUI.transform.parent = slots[i].transform;   // this sets the the slot as a parent // Since in "Slots script" it is using 
+                        axUI.SetActive(true);                         // child of the slot to check that space is full or not
                         break;
                     case pickupTypes.Clover:
                         StaticClass.haveClover = true;
@@ -63,7 +65,15 @@ public class Inventory : MonoBehaviour
                     case pickupTypes.Posion:
                         StaticClass.havePosion = true;
                         //posionUI.transform.position = slots[i].transform.position;
+                        //posionUI.transform.parent = slots[i].transform;
                         //posionUI.SetActive(true);
+                        break;
+
+                    case pickupTypes.Amaranthus:
+                        StaticClass.haveAmaranthus = true;
+                        amaranthusUI.transform.position = slots[i].transform.position;
+                        amaranthusUI.transform.parent = slots[i].transform;
+                        amaranthusUI.SetActive(true);
                         break;
                 }
 

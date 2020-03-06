@@ -13,8 +13,8 @@ public class Slots : MonoBehaviour
 
     private void Update()
     {
-        if (transform.childCount <=0) { // this checks that if a slot is empty boolean checks false so that
-            inventory.isFull[i] = false; // the player can collect staff
+        if (transform.childCount <=0) { // this checks if a slot is an empty 
+            inventory.isFull[i] = false; // if the slot is empty, the player can collect staff
         }
     }
 
