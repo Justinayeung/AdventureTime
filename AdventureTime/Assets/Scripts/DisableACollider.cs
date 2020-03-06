@@ -13,11 +13,15 @@ public class DisableACollider : MonoBehaviour
             beforeScene.SetActive(true);
             afterScene.SetActive(false);
             afterRid.SetActive(false);
-        } else if (StaticClass.sceneChanged && !StaticClass.amaranthusObtained) { //If plaque at chest riddle has been visited and amaranthus not obtained
+        }
+
+        if (StaticClass.sceneChanged) { //If plaque at chest riddle has been visited and amaranthus not obtained
             beforeScene.SetActive(false);
             afterScene.SetActive(true);
             afterRid.SetActive(false);
-        } else if (StaticClass.amaranthusObtained) { //If amaranthus has been obtained
+        }
+
+        if (StaticClass.sceneChanged && StaticClass.amaranthusObtained) { //If amaranthus has been obtained
             beforeScene.SetActive(false);
             afterScene.SetActive(false);
             afterRid.SetActive(true);

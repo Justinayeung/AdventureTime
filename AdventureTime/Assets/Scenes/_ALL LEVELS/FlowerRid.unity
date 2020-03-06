@@ -464,7 +464,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 18914212}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MushroomHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +478,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18914211}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.167289, y: 0.4634844, z: -8.881022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -491,7 +491,7 @@ Transform:
   - {fileID: 5255257637033476163}
   - {fileID: 7863382806599596081}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &30126086
 PrefabInstance:
@@ -3574,7 +3574,7 @@ PrefabInstance:
     - target: {fileID: 2127970220767513794, guid: 87d731b267f791f4ea41fa70476dfdb8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2127970220767513794, guid: 87d731b267f791f4ea41fa70476dfdb8,
         type: 3}
@@ -14885,7 +14885,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45072
+  m_Name: pb_Mesh28274
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15054,7 +15054,6 @@ GameObject:
   - component: {fileID: 622284716}
   - component: {fileID: 622284715}
   - component: {fileID: 622284714}
-  - component: {fileID: 622284713}
   - component: {fileID: 622284711}
   - component: {fileID: 622284710}
   m_Layer: 10
@@ -15089,20 +15088,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.758814, y: 5.19, z: 3.9499118}
   m_Center: {x: -0.035593033, y: 0.82569855, z: -0.38388062}
---- !u!64 &622284713
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622284709}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1381039231}
 --- !u!114 &622284714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28236,7 +28221,7 @@ Transform:
   - {fileID: 1776839374}
   - {fileID: 359652115}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888488145
 GameObject:
@@ -28993,7 +28978,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh44980
+  m_Name: pb_Mesh28182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35064,7 +35049,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45232
+  m_Name: pb_Mesh28438
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -41403,7 +41388,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh44416
+  m_Name: pb_Mesh27624
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42249,7 +42234,7 @@ MonoBehaviour:
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 55
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_IgnoreNavMeshAgent: 1
@@ -42259,7 +42244,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 9a2dc56e2ab9af740ad5535acbf33e93, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: d1195e055a8950c4d8bfdb4db30a3042, type: 2}
 --- !u!4 &1417597208
 Transform:
   m_ObjectHideFlags: 0
@@ -66969,6 +66954,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mushroom4
       objectReference: {fileID: 0}
+    - target: {fileID: 1083594731299709164, guid: 9c7df5ae8e42c4442b9cf1ed17f34478,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4130621584942322431, guid: 9c7df5ae8e42c4442b9cf1ed17f34478,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67099,6 +67089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mushroom3
       objectReference: {fileID: 0}
+    - target: {fileID: 7345365478269489932, guid: 14db28b7edcf3bd4ea7a90a9f2c31714,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14db28b7edcf3bd4ea7a90a9f2c31714, type: 3}
 --- !u!4 &2299802213579380591 stripped
@@ -67173,6 +67168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mushroom7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482662028679924454, guid: 43888a1fd0e87f2458c0e387551a45ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43888a1fd0e87f2458c0e387551a45ac, type: 3}
@@ -67249,6 +67249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mushroom6
       objectReference: {fileID: 0}
+    - target: {fileID: 2638518591020159310, guid: 46819f2d3b481c94880c288b0dd3a7f9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46819f2d3b481c94880c288b0dd3a7f9, type: 3}
 --- !u!4 &4948571409348583573 stripped
@@ -67324,6 +67329,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloverWith4Leaves
       objectReference: {fileID: 0}
+    - target: {fileID: 3248736879422252235, guid: e59ae9f7e6d918448bca80aea1741f5c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e59ae9f7e6d918448bca80aea1741f5c, type: 3}
 --- !u!4 &5255257637033476163 stripped
@@ -67343,6 +67353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mushroom2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827515334703070000, guid: fdaaacc1f2a04b449a49eb18efaed4ab,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3388952514527807779, guid: fdaaacc1f2a04b449a49eb18efaed4ab,
         type: 3}
@@ -67474,6 +67489,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: mushroom5
       objectReference: {fileID: 0}
+    - target: {fileID: 3359175377747375436, guid: 9f69ded8e01519d498a00e44b262330d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f69ded8e01519d498a00e44b262330d, type: 3}
 --- !u!4 &7482462944859227444 stripped
@@ -67548,6 +67568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Clover
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049474184613062654, guid: 0ab4643753c07e146bebcb75fe2816e8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab4643753c07e146bebcb75fe2816e8, type: 3}
