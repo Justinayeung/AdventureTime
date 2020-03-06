@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 
 public class ChestInputCorrect : MonoBehaviour
 {
-    public ChestInput Playerinput;
     public Animator anim;
     public Animator ridAnim;
    
@@ -15,14 +14,20 @@ public class ChestInputCorrect : MonoBehaviour
     /// Check if all the letters are in the correct positions (if so, open chest)
     /// </summary>
     public void CheckPlayerInput() {
-        if (Playerinput.LetterA && Playerinput.LetterI && Playerinput.LetterR) {
-            anim.SetBool("Open", true);
+        if (StaticClass.LetterA && StaticClass.LetterI && StaticClass.LetterR) {
             ridAnim.SetBool("isShowing", false);
-           
+            StartCoroutine(WaitChestAnim());
+            StaticClass.ChestRidSolved = true;
 
         }
-        else {
-            anim.SetBool("Open", false);
-        }
+    }
+
+    /// <summary>
+    /// Wait a bit before opening chest
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator WaitChestAnim() {
+        yield return new WaitForSeconds(0.3f);
+        anim.SetBool("Open", true);
     }
 }

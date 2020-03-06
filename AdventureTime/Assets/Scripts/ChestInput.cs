@@ -13,7 +13,6 @@ public class ChestInput : MonoBehaviour
     public Transform A;
     public Transform I;
     public Transform R;
-    public bool LetterA, LetterI, LetterR;
 
 
     private bool dragging = false;
@@ -94,21 +93,21 @@ public class ChestInput : MonoBehaviour
         float distance3 = Vector3.Distance(LetterSlot3.position, R.position);
 
         if (distance1 <= 10) { //Checking distance for letter A and slot 1
-            LetterA = true;
+            StaticClass.LetterA = true;
         } else {
-            LetterA = false;
+            StaticClass.LetterA = false;
         }
 
         if (distance2 <= 10) { //Checking distance for letter I and slot 2
-            LetterI = true;
+            StaticClass.LetterI = true;
         } else {
-            LetterI = false;
+            StaticClass.LetterI = false;
         }
 
         if (distance3 <= 10) { //Checking distance for letter R and slot 3
-            LetterR = true;
+            StaticClass.LetterR = true;
         } else {
-            LetterR = false;
+            StaticClass.LetterR = false;
         }
     }
 }
