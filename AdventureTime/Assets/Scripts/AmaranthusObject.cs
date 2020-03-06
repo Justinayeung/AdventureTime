@@ -10,12 +10,14 @@ public class AmaranthusObject : MonoBehaviour
     public AudioClip chestOpenClip;
 
 
-    void Awake()
-    {
+    void Awake() {
         flower.SetActive(false);
         anim.SetBool("CanSee", false);
     }
 
+    /// <summary>
+    /// Start chest opening animation + sound, and setting flower to active
+    /// </summary>
     public void setAmaranthusTrue() {
         flower.SetActive(true);
         anim.SetBool("CanSee", true);

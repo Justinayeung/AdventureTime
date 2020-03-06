@@ -18,7 +18,6 @@ public class ChestInputCorrect : MonoBehaviour
             ridAnim.SetBool("isShowing", false);
             StartCoroutine(WaitChestAnim());
             StaticClass.ChestRidSolved = true;
-
         }
     }
 

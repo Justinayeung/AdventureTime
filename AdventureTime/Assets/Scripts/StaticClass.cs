@@ -18,5 +18,6 @@ public class StaticClass
 
     public static bool LetterA, LetterI, LetterR = false; //Bools for checking if letters are in the right place, and if they are keep Chest open
     public static bool ChestRidSolved = false; //Checking if chest riddle is solved, if it is don't bring up the panel
+    public static bool amaranthusObtained = false; //Using this only for checking if flower has been obtained, if so chest is opened forever
 
 }
