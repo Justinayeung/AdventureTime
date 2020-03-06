@@ -215,7 +215,7 @@ Transform:
   m_LocalScale: {x: 2, y: 6, z: 4.9614067}
   m_Children: []
   m_Father: {fileID: 300340276}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -36, z: 0}
 --- !u!1 &43474189
 GameObject:
@@ -978,7 +978,7 @@ Transform:
   m_LocalScale: {x: 1.3000001, y: 1.3, z: 1.3000001}
   m_Children: []
   m_Father: {fileID: 300340276}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 141.24501, z: 0}
 --- !u!1 &123188086
 GameObject:
@@ -4927,6 +4927,7 @@ Transform:
   - {fileID: 1352201828}
   - {fileID: 1832737400}
   - {fileID: 1923361093}
+  - {fileID: 928818684}
   - {fileID: 33923920}
   - {fileID: 1690344119}
   - {fileID: 2105068046}
@@ -13886,6 +13887,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &928818681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928818684}
+  - component: {fileID: 928818683}
+  - component: {fileID: 928818682}
+  m_Layer: 0
+  m_Name: ColliderToGod (2)
+  m_TagString: Platform
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &928818682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928818681}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &928818683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928818681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99c4b0e15e5e8a4f9b74c3dbacda8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toScene: GodAfterRid
+  black: {fileID: 1950823971}
+  anim: {fileID: 1950823967}
+--- !u!4 &928818684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928818681}
+  m_LocalRotation: {x: -0, y: 0.44361994, z: -0, w: 0.896215}
+  m_LocalPosition: {x: 12.36, y: 3, z: 21.51}
+  m_LocalScale: {x: 2, y: 6, z: 6}
+  m_Children: []
+  m_Father: {fileID: 300340276}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &960216347
 GameObject:
   m_ObjectHideFlags: 0
@@ -20197,6 +20258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beforeScene: {fileID: 1832737397}
   afterScene: {fileID: 1923361090}
+  afterRid: {fileID: 928818681}
 --- !u!114 &1033255802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22797,7 +22859,7 @@ Transform:
   m_LocalScale: {x: 1.3000001, y: 1.3, z: 1.3000001}
   m_Children: []
   m_Father: {fileID: 300340276}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -36, z: 0}
 --- !u!1 &1352201825
 GameObject:
@@ -25120,7 +25182,7 @@ Transform:
   m_LocalScale: {x: 1.3000001, y: 1.3, z: 1.3000001}
   m_Children: []
   m_Father: {fileID: 300340276}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -36, z: 0}
 --- !u!1 &1607578121
 GameObject:
@@ -28172,7 +28234,7 @@ Transform:
   m_LocalScale: {x: 2, y: 6, z: 4.9614067}
   m_Children: []
   m_Father: {fileID: 300340276}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -36, z: 0}
 --- !u!65 &1690344120
 BoxCollider:
@@ -40524,7 +40586,7 @@ Transform:
   m_LocalScale: {x: 1.3000001, y: 1.3, z: 1.3000001}
   m_Children: []
   m_Father: {fileID: 300340276}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 141.24501, z: 0}
 --- !u!1001 &4007753107421308231
 PrefabInstance:

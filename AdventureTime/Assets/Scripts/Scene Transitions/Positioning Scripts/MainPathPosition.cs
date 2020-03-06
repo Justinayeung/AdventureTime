@@ -35,6 +35,8 @@ public class MainPathPosition : SceneController
             player.position = GodPos.position;
         } else if (prevScene == "GodRiddleTest") {
             player.position = GodPos.position;
+        } else if (prevScene == "GodAfterRid") {
+            player.position = GodPos.position;
         } else if (prevScene == "ChestRiddle") {
             player.position = ChestRiddlePos.position;
         } else if (prevScene == "PathOther") {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StaticClass
 {
-    public static bool sceneChanged; //Bool for checking if the plaque or chest has been visited, so that you can go to god to get the riddle
+    public static bool sceneChanged = false; //Bool for checking if the plaque or chest has been visited, so that you can go to god to get the riddle
 
     public static bool haveAx;
     public static bool havePosion;
