@@ -6912,7 +6912,7 @@ PrefabInstance:
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.size
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
@@ -6922,17 +6922,53 @@ PrefabInstance:
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: hello there
+      value: Who?
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: Hope everything kinda works.
+      value: These roots that ground me, have slowly drained my power.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: 'Find a plaque with a riddle and returnt to me. '
+      value: I cannot move from this place. Please...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Dear child...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: Three ingredients are what you need.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: One flower that bares the same name as our forest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: A lucky plant hidden in a field of green.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[7]
+      value: 'And hidden in a place where no one dares to venture. Living off of
+        the decaying and resting in the place of darkness, with many spots of white. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[8]
+      value: Find the ingredients. Go to the source.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[9]
+      value: A flower that bares the same name as our forest.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354555, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
@@ -39894,6 +39930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3094348721460361717, guid: f671a80b94981fe4e81866e224427dd3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3094348722027597404, guid: f671a80b94981fe4e81866e224427dd3,
         type: 3}

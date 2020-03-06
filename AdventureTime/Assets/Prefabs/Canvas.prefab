@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 1809592531843128619}
   - component: {fileID: 1809592531843128616}
   - component: {fileID: 1809592531843128618}
+  - component: {fileID: 9064407118354046607}
   m_Layer: 5
   m_Name: dialogue box
   m_TagString: Untagged
@@ -806,6 +807,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9064407118354046607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809592531843128622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5d48df0ab5a604a9ad08764fb3795a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1809592531846850152
 GameObject:
   m_ObjectHideFlags: 0
