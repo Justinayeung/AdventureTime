@@ -9,18 +9,18 @@ public class DialogueCollide : MonoBehaviour
     private bool isShown = false;
 
 
-    private void Start()
-    {
-        Dialogue.SetActive(false);
-    }
+    //private void Start()
+    //{
+    //    Dialogue.SetActive(false);
+    //}
 
-    private void Update()
-    {
-        if (isShown)
-        {
-            return;
-        }
-    }
+    //private void Update()
+    //{
+    //    if (isShown)
+    //    {
+    //        return;
+    //    }
+    //}
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -32,8 +32,8 @@ public class DialogueCollide : MonoBehaviour
         }
     }
 
-    public void Continue()
-    {
-        Dialogue.SetActive(false);
-    }
+    //public void Continue()
+    //{
+    //    Dialogue.SetActive(false);
+    //}
 }

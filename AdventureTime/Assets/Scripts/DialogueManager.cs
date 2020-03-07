@@ -15,7 +15,6 @@ public class DialogueManager : MonoBehaviour
     public AudioSource typeAudio;
     public AudioClip typeClip;
 
-    public float textSpeed = .02f;
     public AnimationCurve varCurve;
 
     void Start()
@@ -36,7 +35,6 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-
         DisplayNextSentence();
     }
 
@@ -51,13 +49,11 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
-        Debug.Log(sentence);
+        //Debug.Log(sentence);
     }
 
     IEnumerator TypeSentence(string sentence)
-    {
-        
-
+    {  
         dialogueText.text= "";
         float i = 0;
         foreach(char letter in sentence.ToCharArray())
@@ -67,13 +63,9 @@ public class DialogueManager : MonoBehaviour
             typeAudio.PlayOneShot(typeClip);
             dialogueText.text += letter;
             i += 1f;
-            yield return new WaitForSeconds(textSpeed);
             yield return null;
-
-
         }
         typeAudio.Stop();
-
     }
 
 
