@@ -11,6 +11,10 @@ TagManager:
   - Note
   - Clover
   - Posion
+  - NPC
+  - Letter
+  - LetterSlot
+  - Images
   layers:
   - Default
   - TransparentFX

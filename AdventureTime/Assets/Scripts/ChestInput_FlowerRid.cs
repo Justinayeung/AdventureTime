@@ -6,51 +6,51 @@ using UnityEngine.UI;
 
 public class ChestInput_FlowerRid : MonoBehaviour
 {
-    public const string Letter_Tag = "Letter";
+    public const string Image_Tag = "Images";
     public Transform Slot1;
     public Transform Mushroom;
 
 
     private bool dragging = false;
-    private Vector3 letterInitialPos;
-    private Transform letterToDrag;
+    private Vector3 imageInitialPos;
+    private Transform imageToDrag;
     private Image letterImage;
 
     List<RaycastResult> hitObjects = new List<RaycastResult>();
 
     void Update() {
-        checkPositions();
+        CheckPositions();
 
         //If mouse is held
         if (Input.GetMouseButtonDown(0)) {
-            letterToDrag = GetLetterTransform(); //Get letter transform
-            if (letterToDrag != null) {
+            imageToDrag = GetLetterTransform(); //Get letter transform
+            if (imageToDrag != null) {
                 dragging = true;
-                letterToDrag.SetAsLastSibling(); //Move transform to the end of local transform list
-                letterInitialPos = letterToDrag.position; //Setting inital position to when we first click the letter 
-                letterImage = letterToDrag.GetComponent<Image>();
+                imageToDrag.SetAsLastSibling(); //Move transform to the end of local transform list
+                imageInitialPos = imageToDrag.position; //Setting inital position to when we first click the image 
+                letterImage = imageToDrag.GetComponent<Image>();
                 letterImage.raycastTarget = false; //Can't see raycast iamge
             }
         }
 
         // If dragging is true
         if (dragging) {
-            letterToDrag.position = Input.mousePosition; //Setting position of image to mouse position
+            imageToDrag.position = Input.mousePosition; //Setting position of image to mouse position
         }
 
         //If mouse is released
         if (Input.GetMouseButtonUp(0)) {
-            if (letterToDrag != null) {
+            if (imageToDrag != null) {
                 Transform letterToReplace = GetLetterTransform(); //Detect and replace letter underneath
                 if (letterToReplace != null) { //If we are placing current letter on another draggable letter
-                    letterToDrag.position = letterToReplace.position; //Swapping positions with letter underneath
-                    letterToReplace.position = letterInitialPos; //Become the letter's new original position
+                    imageToDrag.position = letterToReplace.position; //Swapping positions with letter underneath
+                    letterToReplace.position = imageInitialPos; //Become the letter's new original position
                 } else {
-                    letterToDrag.position = letterInitialPos; //Reset letter to its inital position
+                    imageToDrag.position = imageInitialPos; //Reset letter to its inital position
                 }
 
                 letterImage.raycastTarget = true; //Allowing letter to be dragged again
-                letterToDrag = null;
+                imageToDrag = null;
             }
             dragging = false;
         }
@@ -74,7 +74,7 @@ public class ChestInput_FlowerRid : MonoBehaviour
     /// </summary>
     private Transform GetLetterTransform() {
         GameObject clickedObject = GetObjectUnderMouse(); //Gameobject that returns the first gameobject hit by raycast
-        if (clickedObject != null && clickedObject.tag == Letter_Tag) {
+        if (clickedObject != null && clickedObject.tag == Image_Tag) {
             return clickedObject.transform;
         }
         return null;
@@ -83,13 +83,13 @@ public class ChestInput_FlowerRid : MonoBehaviour
     /// <summary>
     /// Checking the distance of the letters to gameobject, setting bool to see if it is correct
     /// </summary>
-    public void checkPositions() {
+    public void CheckPositions() {
         float distance1 = Vector3.Distance(Slot1.position, Mushroom.position);
 
         if (distance1 <= 10) { //Checking distance for letter A and slot 1
-            StaticClass.LetterA = true;
+            StaticClass.mushImage = true;
         } else {
-            StaticClass.LetterA = false;
+            StaticClass.mushImage = false;
         }
     }
 }
