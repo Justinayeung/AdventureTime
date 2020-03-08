@@ -33,10 +33,6 @@ public class Inventory : MonoBehaviour
 
         cloverUI.SetActive(false);
         axUI.SetActive(false);
-<<<<<<< HEAD
-=======
-        mushroomUI.SetActive(false);
->>>>>>> 90d1f0e65953abc43bbba27e6fdc47fed250d8fc
         amaranthusUI.SetActive(false);
         mushroomUI.SetActive(false);
     }
@@ -66,16 +62,6 @@ public class Inventory : MonoBehaviour
                         cloverUI.SetActive(true);
                         break;
 
-<<<<<<< HEAD
-=======
-                    case pickupTypes.Posion:
-                        StaticClass.havePosion = true;
-                        mushroomUI.transform.position = slots[i].transform.position;
-                        mushroomUI.transform.parent = slots[i].transform;
-                        mushroomUI.SetActive(true);
-                        break;
-
->>>>>>> 90d1f0e65953abc43bbba27e6fdc47fed250d8fc
                     case pickupTypes.Amaranthus:
                         StaticClass.haveAmaranthus = true;
                         amaranthusUI.transform.position = slots[i].transform.position;
