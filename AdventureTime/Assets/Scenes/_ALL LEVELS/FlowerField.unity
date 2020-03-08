@@ -58598,6 +58598,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2718376817010485921, guid: 6cb4b9f62ec652d438fd460f2666fc7c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2718376817010485927, guid: 6cb4b9f62ec652d438fd460f2666fc7c,
         type: 3}
       propertyPath: m_LocalPosition.x

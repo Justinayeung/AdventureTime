@@ -7,6 +7,7 @@ public class PathToChestRidVineScript : MonoBehaviour
 
     private Animator anim;
     public PickUp pickup;
+    public Collider thisCollider;
 
     void Start()
     {
@@ -29,7 +30,8 @@ public class PathToChestRidVineScript : MonoBehaviour
 
                 StaticClass.axUsed = true; // this bool checks if ax is used so that we could destroy the ax UI in "Spawn" Script.
             }
-            
+
+            thisCollider.enabled = false;
         }
     }
 
