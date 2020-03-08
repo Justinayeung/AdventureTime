@@ -29,7 +29,7 @@ public class PathToChestRidVineScript : MonoBehaviour
 
                 StaticClass.axUsed = true; // this bool checks if ax is used so that we could destroy the ax UI in "Spawn" Script.
             }
-            
+
         }
     }
 

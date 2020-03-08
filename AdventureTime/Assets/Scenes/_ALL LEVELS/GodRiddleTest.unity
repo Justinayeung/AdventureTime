@@ -11010,8 +11010,8 @@ PrefabInstance:
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: "\"I don\u2019t exist in space. You will never thank me but you can\u2019t
-        live without me. You can walk through me but never feel me.\""
+      value: "\"I am an element that doesn't exist in space. You will never thank
+        me but can\u2019t live without me.\""
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354555, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
