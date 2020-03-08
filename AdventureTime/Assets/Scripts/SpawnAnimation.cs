@@ -14,6 +14,9 @@ public class SpawnAnimation : MonoBehaviour
     bool end;
     public Animator anim;
     public AudioSource sound;
+    float t = 0.0f;
+    float max = 6.5f;
+    float min = 1.2f;
 
     void Start() {
         pp.profile.TryGetSettings(out color);
@@ -24,9 +27,18 @@ public class SpawnAnimation : MonoBehaviour
     }
 
     public void Update() {
+        Debug.Log(t);
         if (starter) {
-            color.postExposure.value = Mathf.PingPong(Time.time * 1.7f, 6f);
+            color.postExposure.value = Mathf.Lerp(min, max, t);
             StartCoroutine(StarterBool());
+            t += 0.5f * Time.deltaTime;
+
+            if (t > 1.3f) {
+                float temp = max;
+                max = min;
+                min = temp;
+                t = 0.0f;
+            }
         }
 
         if (end) {
@@ -34,20 +46,20 @@ public class SpawnAnimation : MonoBehaviour
         }
     }
 
-    public void ParticleFall(){
+    public void ParticleFall(){ //Called in animation
         spawnParticle2.SetActive(true);
     }
 
-    public void PlaySound() {
+    public void PlaySound() { //Called in animation
         sound.Play();
     }
 
-    public void lightShine() {
+    public void lightShine() { //Called in animation
         starter = true;
     }
 
     IEnumerator StarterBool() {
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(1.65f);
         spawnParticle1.SetActive(false);
         spawnParticle2.SetActive(false);
         player.enabled = true;
