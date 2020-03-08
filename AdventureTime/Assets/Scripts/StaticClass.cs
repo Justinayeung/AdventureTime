@@ -20,4 +20,8 @@ public class StaticClass
     public static bool ChestRidSolved = false; //Checking if chest riddle is solved, if it is don't bring up the panel
     public static bool amaranthusObtained = false; //Using this only for checking if flower has been obtained, if so chest is opened forever
 
+    public static bool mushImage = false; //Bool for checking if mushroom iamge is in the right place, and if it is keep Chest open
+    public static bool chestSolved = false; //Checking if chest riddle (in FlowerRid) is solved, if it is don't bring up the panel
+    public static bool mushObtained = false; //Using this only for checking if mushroom has been obtained, if so chest is opened forever
+
 }
