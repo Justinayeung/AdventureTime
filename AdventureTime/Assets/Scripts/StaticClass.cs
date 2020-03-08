@@ -26,4 +26,6 @@ public class StaticClass
     public static bool chestSolved = false; //Checking if chest riddle (in FlowerRid) is solved, if it is don't bring up the panel
     public static bool mushObtained = false; //Using this only for checking if mushroom has been obtained, if so chest is opened forever
 
+    public static bool end = false; //Level Start animation
+
 }
