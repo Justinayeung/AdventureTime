@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7538084415371201385}
   - component: {fileID: 314338602377783155}
   m_Layer: 5
-  m_Name: Amaranthus_UI
+  m_Name: Mushroom_UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2158486460318231392, guid: 41b321b9dce01ef4384ebc6a336e948f,
+  m_Sprite: {fileID: 1810337948700198858, guid: 1a4a6720ee077b741969fece7dd067d3,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0

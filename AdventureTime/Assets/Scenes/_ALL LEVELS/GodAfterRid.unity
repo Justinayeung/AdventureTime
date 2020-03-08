@@ -11376,23 +11376,22 @@ PrefabInstance:
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: Three ingredients are what you need.
+      value: Three plants are what is needed to free me.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: A lucky plant hidden in a field of green.
+      value: A lucky one hidden in a field of green.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: And hidden in a place where no one dares to venture. Living off of the
-        decaying and resting in the place of darkness.
+      value: And one living off of the decaying and resting in the place of darkness.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: One flower that bares the same name as our forest.
+      value: One that bares the same name as our forest.
       objectReference: {fileID: 0}
     - target: {fileID: 7573699272300354553, guid: 308ffb75177ed434a9372557f0cb3034,
         type: 3}

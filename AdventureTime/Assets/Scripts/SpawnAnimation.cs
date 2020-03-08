@@ -11,7 +11,6 @@ public class SpawnAnimation : MonoBehaviour
     public PostProcessVolume pp;
     ColorGrading color;
     bool starter;
-    bool end;
     public Animator anim;
     public AudioSource sound;
     float t = 0.0f;
@@ -41,7 +40,7 @@ public class SpawnAnimation : MonoBehaviour
             }
         }
 
-        if (end) {
+        if (StaticClass.end) {
             this.gameObject.SetActive(false);
         }
     }
@@ -59,7 +58,7 @@ public class SpawnAnimation : MonoBehaviour
     }
 
     IEnumerator StarterBool() {
-        yield return new WaitForSeconds(1.65f);
+        yield return new WaitForSeconds(1.6f);
         spawnParticle1.SetActive(false);
         spawnParticle2.SetActive(false);
         player.enabled = true;
@@ -67,6 +66,6 @@ public class SpawnAnimation : MonoBehaviour
         starter = false;
         color.postExposure.value = 1.2f;
         yield return new WaitForSeconds(1f);
-        end = true;
+        StaticClass.end = true;
     }
 }

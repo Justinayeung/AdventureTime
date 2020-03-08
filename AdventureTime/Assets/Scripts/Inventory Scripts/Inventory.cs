@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     [Header("UI icons")]
     public GameObject cloverUI;
     public GameObject axUI;
-    //public GameObject posionUI;
+    public GameObject mushroomUI;
     public GameObject amaranthusUI;
 
     void Awake()
@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour
 
         cloverUI.SetActive(false);
         axUI.SetActive(false);
-        //posionUI.SetActive(false);
+        mushroomUI.SetActive(false);
         amaranthusUI.SetActive(false);
     }
     /// <summary>
@@ -64,9 +64,9 @@ public class Inventory : MonoBehaviour
 
                     case pickupTypes.Posion:
                         StaticClass.havePosion = true;
-                        //posionUI.transform.position = slots[i].transform.position;
-                        //posionUI.transform.parent = slots[i].transform;
-                        //posionUI.SetActive(true);
+                        mushroomUI.transform.position = slots[i].transform.position;
+                        mushroomUI.transform.parent = slots[i].transform;
+                        mushroomUI.SetActive(true);
                         break;
 
                     case pickupTypes.Amaranthus:
