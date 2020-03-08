@@ -12,16 +12,13 @@ public class PickUp : MonoBehaviour
     void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("InventoryManager").GetComponent<Inventory>();
-        if (StaticClass.haveAx == true) {
-            Destroy(this.gameObject);
-        }
     }
 
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            inventory.PickedUp(thisitempickuptype);
+            inventory.PickedUp(thisitempickuptype); 
             Destroy(this.gameObject);
         }
 

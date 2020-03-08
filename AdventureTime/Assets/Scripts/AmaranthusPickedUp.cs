@@ -9,4 +9,12 @@ public class AmaranthusPickedUp : MonoBehaviour
             StaticClass.amaranthusObtained = true;
         }
     }
+
+    void Start()
+    {
+        if (StaticClass.haveAmaranthus == true)
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
