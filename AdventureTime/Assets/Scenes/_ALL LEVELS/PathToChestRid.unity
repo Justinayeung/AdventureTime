@@ -14839,7 +14839,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588358113}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.47, y: 2.87, z: -13.3}
+  m_LocalPosition: {x: 3.47, y: 2.87, z: -15.18}
   m_LocalScale: {x: 2, y: 7.7520733, z: 6.6125107}
   m_Children: []
   m_Father: {fileID: 273503923}
@@ -45874,7 +45874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickup: {fileID: 1824096139, guid: fe1fc44cc7b94d64ea34800622dec02f, type: 3}
-  thisCollider: {fileID: 1814275413}
 --- !u!65 &1920082776
 BoxCollider:
   m_ObjectHideFlags: 0
