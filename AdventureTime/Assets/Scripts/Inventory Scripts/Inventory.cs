@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public enum pickupTypes { Ax, Clover, Posion, Amaranthus };
+    public enum pickupTypes { Ax, Clover, Posion, Amaranthus, Mushroom };
 
     public bool[] isFull;
     public GameObject[] slots;
@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     [Header("UI icons")]
     public GameObject cloverUI;
     public GameObject axUI;
-    //public GameObject posionUI;
+    public GameObject mushroomUI;
     public GameObject amaranthusUI;
 
     void Awake()
@@ -33,8 +33,8 @@ public class Inventory : MonoBehaviour
 
         cloverUI.SetActive(false);
         axUI.SetActive(false);
-        //posionUI.SetActive(false);
         amaranthusUI.SetActive(false);
+        mushroomUI.SetActive(false);
     }
     /// <summary>
     /// This function checks the object is picked up and spawns the icon on inventory and also checks that inventory is occupied
@@ -62,18 +62,18 @@ public class Inventory : MonoBehaviour
                         cloverUI.SetActive(true);
                         break;
 
-                    case pickupTypes.Posion:
-                        StaticClass.havePosion = true;
-                        //posionUI.transform.position = slots[i].transform.position;
-                        //posionUI.transform.parent = slots[i].transform;
-                        //posionUI.SetActive(true);
-                        break;
-
                     case pickupTypes.Amaranthus:
                         StaticClass.haveAmaranthus = true;
                         amaranthusUI.transform.position = slots[i].transform.position;
                         amaranthusUI.transform.parent = slots[i].transform;
                         amaranthusUI.SetActive(true);
+                        break;
+
+                    case pickupTypes.Mushroom:
+                        StaticClass.haveMushroom = true;
+                        mushroomUI.transform.position = slots[i].transform.position;
+                        mushroomUI.transform.parent = slots[i].transform;
+                        mushroomUI.SetActive(true);
                         break;
                 }
 

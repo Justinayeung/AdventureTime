@@ -10,11 +10,13 @@ public class StaticClass
     public static bool havePosion;
     public static bool haveClover;
     public static bool haveAmaranthus;
+    public static bool haveMushroom;
 
     public static bool axUsed;
     public static bool posionUsed;
     public static bool cloverUsed;
     public static bool amaranthusUsed;
+    public static bool mushroomUsed;
 
     public static bool LetterA, LetterI, LetterR = false; //Bools for checking if letters are in the right place, and if they are keep Chest open
     public static bool ChestRidSolved = false; //Checking if chest riddle is solved, if it is don't bring up the panel

@@ -23,7 +23,7 @@ public class Spawn : MonoBehaviour // This is more like destorying UI script
             gameObject.SetActive(false);
             inventory.isFull[i] = false;
         }
-        if (StaticClass.posionUsed == true)  // destory the posion when it is used
+        if (StaticClass.mushroomUsed == true)  // destory the posion when it is used
         {
             gameObject.SetActive(false);
             inventory.isFull[i] = false;
