@@ -15,6 +15,7 @@ TagManager:
   - Letter
   - LetterSlot
   - Images
+  - note
   layers:
   - Default
   - TransparentFX

@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class NoteInteract : MonoBehaviour
 {
-     void OnTriggerEnter(Collider other)
+    Note note;
+
+    private void Start()
+    {
+        note = GetComponent<Note>();
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GetComponent<Note>().ShowNoteImage();
-           
-
+            note.ShowNoteImage();
         }
     }
 }

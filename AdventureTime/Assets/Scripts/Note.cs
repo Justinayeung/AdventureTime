@@ -12,14 +12,16 @@ public class Note : MonoBehaviour
     public AudioClip notePutAway;
     public AudioSource notePicked;
     public AudioSource notePutDown;
-   
+
+    PlayerMovement player;
+
     void Start()
     {
         //disabling the note to appear
         noteImage.enabled = false;
         noteHideButton.SetActive(false);
 
-
+        player = FindObjectOfType<PlayerMovement>(); //Find object with player movement script
 }
 
 public void ShowNoteImage()
@@ -29,6 +31,8 @@ public void ShowNoteImage()
         noteHideButton.SetActive(true);
 
      notePicked.PlayOneShot(noteAudio);
+
+        player.canMove = false; //Player can't move
     }
 
     public void HideNote()
@@ -37,7 +41,8 @@ public void ShowNoteImage()
         noteImage.enabled = false;
         noteHideButton.SetActive(false);
 
-       notePutDown.PlayOneShot(notePutAway);
-        Destroy(this);
+        notePutDown.PlayOneShot(notePutAway);
+        player.canMove = true; //Player can move
+        //Destroy(this);
     }
 }
