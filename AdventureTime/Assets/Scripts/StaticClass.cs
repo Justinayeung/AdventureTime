@@ -7,13 +7,11 @@ public class StaticClass
     public static bool sceneChanged = false; //Bool for checking if the plaque or chest has been visited, so that you can go to god to get the riddle
 
     public static bool haveAx;
-    public static bool havePosion;
     public static bool haveClover;
     public static bool haveAmaranthus;
     public static bool haveMushroom;
 
     public static bool axUsed;
-    public static bool posionUsed;
     public static bool cloverUsed;
     public static bool amaranthusUsed;
     public static bool mushroomUsed;

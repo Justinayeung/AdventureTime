@@ -55,45 +55,6 @@ MonoBehaviour:
   axUI: {fileID: 414020461055460228}
   mushroomUI: {fileID: 5309543898984479660}
   amaranthusUI: {fileID: 4945430763275610122}
---- !u!114 &7213301939223231714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3077409110232448711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cedbb7a3b9a457940acfd39430ab8ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i: 0
---- !u!114 &2480308291140549425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4945430763275610122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cedbb7a3b9a457940acfd39430ab8ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i: 0
---- !u!114 &3524070635621066199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5309543898984479660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cedbb7a3b9a457940acfd39430ab8ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i: 0
 --- !u!1001 &47407896050408686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111,22 +72,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6056439389149835085, guid: df1d77890a27ebc419314fe8a3c31efc,
+    - target: {fileID: 366630299495718762, guid: df1d77890a27ebc419314fe8a3c31efc,
         type: 3}
-      propertyPath: m_Color.r
-      value: 1
+      propertyPath: m_TagString
+      value: Ax_UI
       objectReference: {fileID: 0}
-    - target: {fileID: 6056439389149835085, guid: df1d77890a27ebc419314fe8a3c31efc,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6056439389149835085, guid: df1d77890a27ebc419314fe8a3c31efc,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6709088013502505243, guid: 8541e3fc6043acc459102cdf47fe03cd,
-        type: 3}
     - target: {fileID: 7331116377056809519, guid: df1d77890a27ebc419314fe8a3c31efc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -232,7 +182,8 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2712767756029850704, guid: df1d77890a27ebc419314fe8a3c31efc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df1d77890a27ebc419314fe8a3c31efc, type: 3}
 --- !u!1 &414020461055460228 stripped
 GameObject:
@@ -554,6 +505,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2718376817010485927}
     m_Modifications:
+    - target: {fileID: 592708657705129826, guid: 87d731b267f791f4ea41fa70476dfdb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slots
+      objectReference: {fileID: 0}
     - target: {fileID: 2127970220767513794, guid: 87d731b267f791f4ea41fa70476dfdb8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -663,6 +619,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Inventory Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127970220794656854, guid: 87d731b267f791f4ea41fa70476dfdb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slots
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127970220941758653, guid: 87d731b267f791f4ea41fa70476dfdb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slots
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127970221292180661, guid: 87d731b267f791f4ea41fa70476dfdb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slots
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236482161559633589, guid: 87d731b267f791f4ea41fa70476dfdb8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Slots
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87d731b267f791f4ea41fa70476dfdb8, type: 3}

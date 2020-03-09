@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7331116377056809519}
   - component: {fileID: 8421826719562000958}
   - component: {fileID: 6056439389149835085}
-  - component: {fileID: -2712767756029850704}
   m_Layer: 5
   m_Name: PickUp_UI
   m_TagString: Untagged
@@ -75,16 +74,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-2712767756029850704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366630299495718762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cedbb7a3b9a457940acfd39430ab8ee3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  i: 0

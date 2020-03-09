@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public enum pickupTypes { Ax, Clover, Posion, Amaranthus, Mushroom };
+    public enum pickupTypes { Ax, Clover, Amaranthus, Mushroom };
 
     public bool[] isFull;
     public GameObject[] slots;
@@ -31,10 +31,12 @@ public class Inventory : MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject); // next scene this inventory script won't be destoryed and keep the info
 
+        /*
         cloverUI.SetActive(false);
         axUI.SetActive(false);
         amaranthusUI.SetActive(false);
         mushroomUI.SetActive(false);
+        */
     }
     /// <summary>
     /// This function checks the object is picked up and spawns the icon on inventory and also checks that inventory is occupied
