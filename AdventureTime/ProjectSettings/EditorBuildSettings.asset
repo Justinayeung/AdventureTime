@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/_ALL LEVELS/EnemyBase.unity
     guid: 0db0ecc0162a1c74fafacda35361d8d3
+  - enabled: 1
+    path: Assets/Scenes/_ALL LEVELS/GodEnding.unity
+    guid: 20ed04ae465d9a54c8151da3814ccdf0
+  - enabled: 1
+    path: Assets/Scenes/_ALL LEVELS/MainMenuEnd.unity
+    guid: 35b0ae0f1eaf69d41afa4c51c5284c81
   m_configObjects: {}
