@@ -10,7 +10,6 @@ public class SpawnAnimation : MonoBehaviour
     public SkinnedMeshRenderer player;
     public PostProcessVolume pp;
     ColorGrading color;
-    bool starter;
     public Animator anim;
     public AudioSource sound;
     float t = 0.0f;
@@ -18,16 +17,18 @@ public class SpawnAnimation : MonoBehaviour
     float min = 1.2f;
 
     void Start() {
-        pp.profile.TryGetSettings(out color);
-        player.enabled = false;
-        spawnParticle1.SetActive(true);
-        spawnParticle2.SetActive(false);
-        anim.SetTrigger("Start");
+        if (!StaticClass.end) {
+            pp.profile.TryGetSettings(out color);
+            player.enabled = false;
+            spawnParticle1.SetActive(true);
+            spawnParticle2.SetActive(false);
+            anim.SetTrigger("Start");
+        }
     }
 
     public void Update() {
         Debug.Log(t);
-        if (starter) {
+        if (StaticClass.starter) {
             color.postExposure.value = Mathf.Lerp(min, max, t);
             StartCoroutine(StarterBool());
             t += 0.5f * Time.deltaTime;
@@ -54,7 +55,7 @@ public class SpawnAnimation : MonoBehaviour
     }
 
     public void lightShine() { //Called in animation
-        starter = true;
+        StaticClass.starter = true;
     }
 
     IEnumerator StarterBool() {
@@ -63,7 +64,7 @@ public class SpawnAnimation : MonoBehaviour
         spawnParticle2.SetActive(false);
         player.enabled = true;
         yield return new WaitForSeconds(2.9f);
-        starter = false;
+        StaticClass.starter = false;
         color.postExposure.value = 1.2f;
         yield return new WaitForSeconds(1f);
         StaticClass.end = true;
