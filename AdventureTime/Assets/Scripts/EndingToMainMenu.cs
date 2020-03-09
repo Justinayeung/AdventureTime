@@ -13,6 +13,7 @@ public class EndingToMainMenu : MonoBehaviour
     void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
             StartCoroutine(Ending()); //Starting fade coroutine
+            StaticClass.inventoryDestroy = true;
         }
     }
 

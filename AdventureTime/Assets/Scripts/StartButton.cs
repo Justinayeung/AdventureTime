@@ -12,5 +12,6 @@ public class StartButton : MonoBehaviour
     {
         buttonAudio.Play();
         SceneManager.LoadScene(SceneName);
+        StaticClass.inventoryDestroy = false;
     }
 }
