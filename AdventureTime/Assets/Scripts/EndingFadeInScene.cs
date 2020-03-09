@@ -31,7 +31,7 @@ public class EndingFadeInScene : MonoBehaviour
         if (other.CompareTag("Player") && StaticClass.haveClover && StaticClass.haveMushroom && StaticClass.haveAmaranthus)
         {
             StartCoroutine(Ending()); //Starting fade coroutine
-            StaticClass.axUsed = true;
+            StaticClass.amaranthusUsed = true;
             StaticClass.cloverUsed = true;
             StaticClass.mushroomUsed = true;
         }
