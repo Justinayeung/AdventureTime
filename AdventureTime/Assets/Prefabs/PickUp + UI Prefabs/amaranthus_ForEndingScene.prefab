@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3833476281805668593}
   - component: {fileID: 5217482707481049799}
   - component: {fileID: 1969394144504530494}
-  - component: {fileID: 1209035286292590269}
   m_Layer: 0
   m_Name: amaranthus_ForEndingScene
   m_TagString: Untagged
@@ -81,25 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!95 &1209035286292590269
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245560008949854946}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2a7a71087e9bbb64d9a527247dc80786, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8091150559831792079
 GameObject:
   m_ObjectHideFlags: 0

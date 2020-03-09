@@ -27,4 +27,6 @@ public class StaticClass
     public static bool end = false; //Level Start animation
     public static bool starter = false; //Level Start
 
+    public static bool inventoryDestroy; // This Bool checks if inventory for the menue scene is destoryed
+
 }

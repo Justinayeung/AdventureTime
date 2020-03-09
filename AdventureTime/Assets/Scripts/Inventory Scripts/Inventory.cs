@@ -10,6 +10,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] slots;
 
     static Inventory _instance;
+    public GameObject inv;
 
     //public GameObject pickupUI; // place UI
 
@@ -21,22 +22,26 @@ public class Inventory : MonoBehaviour
 
     void Awake()
     {
-        if (_instance == null) // if inventory is empty
+
+        if(StaticClass.inventoryDestroy == true)
         {
-            _instance = this; // inventory in the current scene
+            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
-        else {
-            Destroy(this.gameObject); // this destorys the new inventory that does not store information
+        else
+        { // if those items are not used, don't destroy inventory when it goes to the next scene
+            if (_instance == null) // if inventory is empty
+            {
+                _instance = this; // inventory in the current scene
+            }
+            else
+            {
+                Destroy(this.gameObject); // this destorys the new inventory that does not store information
+            }
+
+            DontDestroyOnLoad(this.gameObject); // next scene this inventory script won't be destoryed and keep the info
         }
 
-        DontDestroyOnLoad(this.gameObject); // next scene this inventory script won't be destoryed and keep the info
-
-        /*
-        cloverUI.SetActive(false);
-        axUI.SetActive(false);
-        amaranthusUI.SetActive(false);
-        mushroomUI.SetActive(false);
-        */
     }
     /// <summary>
     /// This function checks the object is picked up and spawns the icon on inventory and also checks that inventory is occupied

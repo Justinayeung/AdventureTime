@@ -24,7 +24,7 @@ public class EndingFadeInScene : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         
-        if (other.CompareTag("Player")) //&& StaticClass.haveClover && StaticClass.haveMushroom && StaticClass.haveAmaranthus)
+        if (other.CompareTag("Player") && StaticClass.haveClover && StaticClass.haveMushroom && StaticClass.haveAmaranthus)
         {
             StartCoroutine(Ending()); //Starting fade coroutine
             items.GetComponent<Animator>().SetTrigger("ItemThrow");
@@ -44,6 +44,7 @@ public class EndingFadeInScene : MonoBehaviour
         player.GetComponent<Animator>().SetTrigger("ThrowIngredient");
         //items.GetComponent<Animator>().SetTrigger("ItemThrow");
         fadein.GetComponent<Animator>().SetTrigger("FadeIn");
+        StaticClass.inventoryDestroy = true;
         yield return new WaitUntil(() => white.color.a == 1);
         sceneController.LoadScene(toScene);
     }
